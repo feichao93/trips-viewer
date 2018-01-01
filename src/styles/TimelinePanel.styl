@@ -1,0 +1,98 @@
+@require './base.styl'
+
+.timeline-panel {
+  position absolute
+  right 0
+  top 0
+  bottom 0
+  z-index 2
+  display flex
+  flex-direction column
+  width 400px
+  background #f8f9fd
+
+  .title {
+    @extends $widget-title
+    padding-left 20px
+    font-size 20px
+    text-align center
+    margin-bottom 4px
+  }
+
+  .timeline-legend {
+    display flex
+    text-align center
+    justify-content center
+    align-items center
+    padding-bottom 4px
+    border-bottom 1px solid #cccccc
+
+    .cell {
+      display block
+      width 40px
+      height @width
+      background red
+      color white
+      margin-left 24px
+      &:first-child {
+        margin-left 0
+      }
+    }
+
+    .text {
+      margin-left 8px
+      &:first-child {
+        margin-left 0
+      }
+    }
+  }
+
+  .content {
+    flex 1 1
+    display flex
+    align-items flex-start
+    padding-left 16px
+    overflow-y auto
+
+    .list {
+      flex-grow 1
+      display flex
+      flex-direction column
+
+      .item {
+        display flex
+        position relative
+
+        > p {
+          margin 0
+        }
+
+        .item-symbol-wrapper {
+          margin-left 24px
+          margin-right 8px
+          width 40px
+        }
+
+        .item-symbol {
+          width 40px
+          height 40px
+          text-align center
+          font-weight bold
+          color white
+          user-select none
+
+          &.stay {
+            font-size 32px
+            line-height 37px
+          }
+
+          &.pass-by {
+            font-size 18px
+            line-height 40px
+            transform scale(0.65)
+          }
+        }
+      }
+    }
+  }
+}

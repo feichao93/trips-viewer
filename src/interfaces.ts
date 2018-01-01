@@ -68,10 +68,34 @@ export interface TracePoint {
   event: string
 }
 
+export interface RawTracePoint {
+  x: number
+  y: number
+  time: number
+}
+
+export type RawTrace = {
+  data: RawTracePoint[]
+  floor: string
+}
+export interface SemanticTrace {
+  data: TracePoint[]
+  floor: number
+}
+
 export interface DataSource {
   startTime: number
-  semanticTraces: {
-    data: TracePoint[]
-    floor: number
-  }[]
+  groundTruthTraces: RawTrace[]
+  rawTraces: RawTrace[]
+  cleanedRawTraces: RawTrace[]
+  semanticTraces: SemanticTrace[]
+}
+
+export interface Thunk {
+  (): void
+}
+
+export interface TimeRange {
+  start: number
+  end: number
 }

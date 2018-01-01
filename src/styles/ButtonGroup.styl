@@ -1,0 +1,31 @@
+@require './base.styl'
+
+$border-color = #dadada
+
+.button-group-widget {
+  padding-left 40px
+  display flex
+  flex-direction column
+  border-bottom $border-color 1px solid
+
+  .filename {
+    margin 0
+    margin-top 8px
+  }
+
+  .buttons-wrapper {
+    display flex
+    align-items center
+    //justify-content center
+    height 48px
+
+    .reset-transform-button {
+      //@extends $flat-button
+    }
+
+    .open-file-button {
+      //@extends $flat-button
+      margin-left 24px
+    }
+  }
+}
