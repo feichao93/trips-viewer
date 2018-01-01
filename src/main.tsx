@@ -1,14 +1,15 @@
+import App from './App'
+import makeDrawingDriver from './drivers/makeDrawingDriver'
+import makeFileDriver from './drivers/makeFileDriver'
+import makeShortcutDriver from './drivers/makeShortcutDriver'
+import makeThunkDriver from './drivers/makeThunkDriver'
+import { DataSource, Floor, Thunk } from './interfaces'
 import { makeDOMDriver } from '@cycle/dom'
 import { makeHTTPDriver } from '@cycle/http'
-// const { rerunner, restartable, isolate } = require('cycle-restart')
-import App from './App'
 import { run } from '@cycle/run'
-import './styles/global.styl'
 import { Stream } from 'xstream'
-import { Thunk, Floor, DataSource } from './interfaces'
-import makeDrawingDriver from './drivers/makeDrawingDriver'
-import makeThunkDriver from './drivers/makeThunkDriver'
-import makeFileDriver from './drivers/makeFileDriver'
+import './styles/global.styl'
+// const { rerunner, restartable, isolate } = require('cycle-restart')
 
 run(App, {
   DOM: makeDOMDriver('#app'),
@@ -16,6 +17,7 @@ run(App, {
   // HTTP: restartable(makeHTTPDriver()),
   thunk: makeThunkDriver(),
   file: makeFileDriver<DataSource>(),
+  shortcut: makeShortcutDriver(),
 })
 
 // const rerun = rerunner(setup, makeDrivers, isolate)

@@ -4,6 +4,7 @@ import sampleCombine from 'xstream/extra/sampleCombine'
 import xs, { Stream } from 'xstream'
 import { DOMSource } from '@cycle/dom'
 import { formatTime, getColor, getSemanticTracePoints, Mutation } from './utils'
+import { ShortcutSource } from './drivers/makeShortcutDriver'
 import { SemanticTrace, TracePoint } from './interfaces'
 import { VNode } from 'snabbdom/vnode'
 import './styles/TimelinePanel.styl'
@@ -12,6 +13,7 @@ export interface Sources {
   DOM: DOMSource
   sIndex: Stream<number>
   semanticTraces: Stream<SemanticTrace[]>
+  shortcut: ShortcutSource
 }
 export interface Sinks {
   changeSIndex: Stream<Mutation<number>>
@@ -46,15 +48,10 @@ export default function TimelinePanel(sources: Sources): Sinks {
     .map(e => Number((e.currentTarget as HTMLElement).dataset.sIndex))
     .map(R.always)
 
-  const keydown$ = domSource.select('.timeline-panel').events('keydown')
-
-  const navigateToNext$ = keydown$
-    .filter(e => e.key === 's' || e.key === 'ArrowDown')
-    .mapTo<'next'>('next')
-  const navigateToPrev$ = keydown$
-    .filter(e => e.key === 'w' || e.key === 'ArrowUp')
-    .mapTo<'prev'>('prev')
-  const navigate$ = xs.merge(navigateToNext$, navigateToPrev$)
+  const navigate$ = xs.merge(
+    sources.shortcut.shortcut(['s', 'down'], 'next'),
+    sources.shortcut.shortcut(['w', 'up'], 'prev'),
+  )
 
   const navigateToChangeSIndex$ = navigate$
     .compose(sampleCombine(sIndex$, points$))
@@ -65,10 +62,11 @@ export default function TimelinePanel(sources: Sources): Sinks {
         return Math.max(sIndex - 1, 0)
       }
     })
+    .debug('sampleCombine')
     .map(R.always)
 
   const vdom$ = xs.combine(points$, sIndex$).map(([points, sIndex]) => (
-    <div className="timeline-panel" tabIndex="1">
+    <div className="timeline-panel">
       <h1 className="title">Mobility Semantics Timeline</h1>
       <div className="timeline-legend">
         <span
@@ -103,7 +101,7 @@ export default function TimelinePanel(sources: Sources): Sinks {
               className="item"
               data-sIndex={String(i)}
               style={{
-                marginTop: gap + 'p)',
+                marginTop: gap + 'px',
                 height: `${h(p.endTime - p.startTime)}px`,
                 cursor: 'pointer',
               }}

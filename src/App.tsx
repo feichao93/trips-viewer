@@ -17,6 +17,7 @@ import {
 import { State as LegendState } from './Legend'
 import { VNode } from 'snabbdom/vnode'
 import { plainTraceNameList } from './constants'
+import { ShortcutSource } from './drivers/makeShortcutDriver'
 
 export interface DrawingSource {
   selection: d3.Selection<SVGSVGElement, null, null, null>
@@ -36,6 +37,7 @@ export interface Sources {
   DOM: DOMSource
   drawing: Stream<DrawingSource>
   file: Stream<DataSource>
+  shortcut: ShortcutSource
 }
 
 export interface Sinks {
@@ -67,10 +69,10 @@ function calcualteFloorStats(dataSource: DataSource): FloorStats {
   for (const floorId of Array.from('0123456789').map(Number)) {
     stats.push({ count: 0, floorId, floorName: `floor-${floorId}` })
   }
-  dataSource.semanticTraces.forEach(item => {
-    const floorId = item.floor
+  dataSource.rawTraces.forEach(rawTrace => {
+    const floorId = Number(rawTrace.floor)
     const statItem = stats.find(statItem => statItem.floorId === floorId)
-    statItem.count += item.data.length
+    statItem.count += rawTrace.data.length
   })
   return stats
 }
@@ -124,6 +126,7 @@ export default function App(sources: Sources): Sinks {
     DOM: domSource,
     sIndex: sIndex$,
     semanticTraces: dataSource$.map(d => d.semanticTraces),
+    shortcut: sources.shortcut,
   })
   changeSIndex.imitate(timelinePanel.changeSIndex)
 
