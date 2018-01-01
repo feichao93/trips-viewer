@@ -1,0 +1,57 @@
+@require './base.styl'
+
+.widgets {
+  background-color: #f8f9fd;
+}
+
+.floor-list-widget {
+  padding-left 40px
+
+  .title {
+    @extends $widget-title
+  }
+
+  .subtitle {
+    display flex
+    margin-bottom 4px
+    p {
+      margin 0
+      font-size 12px
+    }
+    p:first-child {
+      width 80px
+    }
+  }
+
+  .floor-list {
+    .floor-item {
+      position relative
+      line-height 30px
+      display flex
+      align-items center
+      cursor pointer
+      margin-left -40px
+      padding-left 40px
+      font-size 14px
+
+      &.active {
+        background #eceef4
+      }
+
+      .bar {
+        position absolute
+        left 0
+        top 0
+        bottom 0
+      }
+
+      .floor-name {
+        width 80px
+      }
+
+      .count {
+        width 100px
+      }
+    }
+  }
+}

@@ -1,0 +1,4947 @@
+{
+  "floorId": 7,
+  "doors": [
+    {
+      "color": "door",
+      "line": { "y1": 22.8, "x1": 20, "y2": 23.2, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1540
+    },
+    {
+      "color": "door",
+      "line": { "y1": 29.6, "x1": 20, "y2": 28.4, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1541
+    },
+    {
+      "color": "door",
+      "line": { "y1": 36.8, "x1": 20, "y2": 35.2, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1542
+    },
+    {
+      "color": "door",
+      "line": { "y1": 44.8, "x1": 20, "y2": 43.2, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1543
+    },
+    {
+      "color": "door",
+      "line": { "y1": 52.8, "x1": 20, "y2": 51.2, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1544
+    },
+    {
+      "color": "door",
+      "line": { "y1": 28.8, "x1": 24, "y2": 27.2, "x2": 24 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1545
+    },
+    {
+      "color": "door",
+      "line": { "y1": 28.8, "x1": 32, "y2": 27.2, "x2": 32 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1546
+    },
+    {
+      "color": "door",
+      "line": { "y1": 28.8, "x1": 40, "y2": 27.2, "x2": 40 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1547
+    },
+    {
+      "color": "door",
+      "line": { "y1": 28.8, "x1": 48, "y2": 27.2, "x2": 48 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1548
+    },
+    {
+      "color": "door",
+      "line": { "y1": 36.8, "x1": 24, "y2": 35.2, "x2": 24 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1549
+    },
+    {
+      "color": "door",
+      "line": { "y1": 36.8, "x1": 32, "y2": 35.2, "x2": 32 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1550
+    },
+    {
+      "color": "door",
+      "line": { "y1": 44.8, "x1": 24, "y2": 43.2, "x2": 24 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1551
+    },
+    {
+      "color": "door",
+      "line": { "y1": 44.8, "x1": 32, "y2": 43.2, "x2": 32 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1552
+    },
+    {
+      "color": "door",
+      "line": { "y1": 52.8, "x1": 24, "y2": 51.2, "x2": 24 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1553
+    },
+    {
+      "color": "door",
+      "line": { "y1": 56, "x1": 28.8, "y2": 56, "x2": 27.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1554
+    },
+    {
+      "color": "door",
+      "line": { "y1": 48, "x1": 36.8, "y2": 48, "x2": 35.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1555
+    },
+    {
+      "color": "door",
+      "line": { "y1": 56, "x1": 36.8, "y2": 56, "x2": 35.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1556
+    },
+    {
+      "color": "door",
+      "line": { "y1": 48, "x1": 41.2, "y2": 48, "x2": 40.8 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1557
+    },
+    {
+      "color": "door",
+      "line": { "y1": 56, "x1": 41.2, "y2": 56, "x2": 40.8 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1558
+    },
+    {
+      "color": "door",
+      "line": { "y1": 48, "x1": 45.6, "y2": 48, "x2": 44.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1559
+    },
+    {
+      "color": "door",
+      "line": { "y1": 52, "x1": 45.6, "y2": 52, "x2": 44.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1560
+    },
+    {
+      "color": "door",
+      "line": { "y1": 56, "x1": 45.6, "y2": 56, "x2": 44.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1561
+    },
+    {
+      "color": "door",
+      "line": { "y1": 24, "x1": 22.4, "y2": 24, "x2": 21.6 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1562
+    },
+    {
+      "color": "door",
+      "line": { "y1": 40, "x1": 22.4, "y2": 40, "x2": 21.6 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1563
+    },
+    {
+      "color": "door",
+      "line": { "y1": 56, "x1": 22.4, "y2": 56, "x2": 21.6 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1564
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 22.8, "y2": 20, "x2": 23.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1565
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 29.6, "y2": 20, "x2": 28.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1566
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 36.8, "y2": 20, "x2": 35.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1567
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 44.8, "y2": 20, "x2": 43.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1568
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 52.8, "y2": 20, "x2": 51.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1569
+    },
+    {
+      "color": "door",
+      "line": { "y1": 24, "x1": 28.8, "y2": 24, "x2": 27.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1570
+    },
+    {
+      "color": "door",
+      "line": { "y1": 32, "x1": 28.8, "y2": 32, "x2": 27.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1571
+    },
+    {
+      "color": "door",
+      "line": { "y1": 40, "x1": 28.8, "y2": 40, "x2": 27.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1572
+    },
+    {
+      "color": "door",
+      "line": { "y1": 48, "x1": 28.8, "y2": 48, "x2": 27.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1573
+    },
+    {
+      "color": "door",
+      "line": { "y1": 24, "x1": 36.8, "y2": 24, "x2": 35.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1574
+    },
+    {
+      "color": "door",
+      "line": { "y1": 32, "x1": 36.8, "y2": 32, "x2": 35.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1575
+    },
+    {
+      "color": "door",
+      "line": { "y1": 24, "x1": 44.8, "y2": 24, "x2": 43.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1576
+    },
+    {
+      "color": "door",
+      "line": { "y1": 32, "x1": 44.8, "y2": 32, "x2": 43.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1577
+    },
+    {
+      "color": "door",
+      "line": { "y1": 24, "x1": 52.8, "y2": 24, "x2": 51.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1578
+    },
+    {
+      "color": "door",
+      "line": { "y1": 28.8, "x1": 56, "y2": 27.2, "x2": 56 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1579
+    },
+    {
+      "color": "door",
+      "line": { "y1": 36.8, "x1": 48, "y2": 35.2, "x2": 48 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1580
+    },
+    {
+      "color": "door",
+      "line": { "y1": 36.8, "x1": 56, "y2": 35.2, "x2": 56 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1581
+    },
+    {
+      "color": "door",
+      "line": { "y1": 41.2, "x1": 48, "y2": 40.8, "x2": 48 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1582
+    },
+    {
+      "color": "door",
+      "line": { "y1": 41.2, "x1": 56, "y2": 40.8, "x2": 56 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1583
+    },
+    {
+      "color": "door",
+      "line": { "y1": 45.6, "x1": 48, "y2": 44.4, "x2": 48 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1584
+    },
+    {
+      "color": "door",
+      "line": { "y1": 45.6, "x1": 52, "y2": 44.4, "x2": 52 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1585
+    },
+    {
+      "color": "door",
+      "line": { "y1": 45.6, "x1": 56, "y2": 44.4, "x2": 56 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1586
+    },
+    {
+      "color": "door",
+      "line": { "y1": 22.4, "x1": 24, "y2": 21.6, "x2": 24 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1587
+    },
+    {
+      "color": "door",
+      "line": { "y1": 22.4, "x1": 40, "y2": 21.6, "x2": 40 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1588
+    },
+    {
+      "color": "door",
+      "line": { "y1": 22.4, "x1": 56, "y2": 21.6, "x2": 56 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1589
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 20, "y2": 20, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1590
+    },
+    {
+      "color": "door",
+      "line": { "y1": 97.2, "x1": 20, "y2": 96.8, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1591
+    },
+    {
+      "color": "door",
+      "line": { "y1": 91.6, "x1": 20, "y2": 90.4, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1592
+    },
+    {
+      "color": "door",
+      "line": { "y1": 84.8, "x1": 20, "y2": 83.2, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1593
+    },
+    {
+      "color": "door",
+      "line": { "y1": 76.8, "x1": 20, "y2": 75.2, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1594
+    },
+    {
+      "color": "door",
+      "line": { "y1": 68.8, "x1": 20, "y2": 67.2, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1595
+    },
+    {
+      "color": "door",
+      "line": { "y1": 92.8, "x1": 24, "y2": 91.2, "x2": 24 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1596
+    },
+    {
+      "color": "door",
+      "line": { "y1": 92.8, "x1": 32, "y2": 91.2, "x2": 32 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1597
+    },
+    {
+      "color": "door",
+      "line": { "y1": 92.8, "x1": 40, "y2": 91.2, "x2": 40 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1598
+    },
+    {
+      "color": "door",
+      "line": { "y1": 92.8, "x1": 48, "y2": 91.2, "x2": 48 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1599
+    },
+    {
+      "color": "door",
+      "line": { "y1": 84.8, "x1": 24, "y2": 83.2, "x2": 24 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1600
+    },
+    {
+      "color": "door",
+      "line": { "y1": 84.8, "x1": 32, "y2": 83.2, "x2": 32 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1601
+    },
+    {
+      "color": "door",
+      "line": { "y1": 76.8, "x1": 24, "y2": 75.2, "x2": 24 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1602
+    },
+    {
+      "color": "door",
+      "line": { "y1": 76.8, "x1": 32, "y2": 75.2, "x2": 32 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1603
+    },
+    {
+      "color": "door",
+      "line": { "y1": 68.8, "x1": 24, "y2": 67.2, "x2": 24 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1604
+    },
+    {
+      "color": "door",
+      "line": { "y1": 64, "x1": 28.8, "y2": 64, "x2": 27.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1605
+    },
+    {
+      "color": "door",
+      "line": { "y1": 72, "x1": 36.8, "y2": 72, "x2": 35.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1606
+    },
+    {
+      "color": "door",
+      "line": { "y1": 64, "x1": 36.8, "y2": 64, "x2": 35.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1607
+    },
+    {
+      "color": "door",
+      "line": { "y1": 72, "x1": 41.2, "y2": 72, "x2": 40.8 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1608
+    },
+    {
+      "color": "door",
+      "line": { "y1": 64, "x1": 41.2, "y2": 64, "x2": 40.8 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1609
+    },
+    {
+      "color": "door",
+      "line": { "y1": 72, "x1": 45.6, "y2": 72, "x2": 44.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1610
+    },
+    {
+      "color": "door",
+      "line": { "y1": 68, "x1": 45.6, "y2": 68, "x2": 44.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1611
+    },
+    {
+      "color": "door",
+      "line": { "y1": 64, "x1": 45.6, "y2": 64, "x2": 44.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1612
+    },
+    {
+      "color": "door",
+      "line": { "y1": 96, "x1": 22.4, "y2": 96, "x2": 21.6 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1613
+    },
+    {
+      "color": "door",
+      "line": { "y1": 80, "x1": 22.4, "y2": 80, "x2": 21.6 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1614
+    },
+    {
+      "color": "door",
+      "line": { "y1": 64, "x1": 22.4, "y2": 64, "x2": 21.6 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1615
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 22.8, "y2": 100, "x2": 23.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1616
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 29.6, "y2": 100, "x2": 28.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1617
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 36.8, "y2": 100, "x2": 35.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1618
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 44.8, "y2": 100, "x2": 43.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1619
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 52.8, "y2": 100, "x2": 51.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1620
+    },
+    {
+      "color": "door",
+      "line": { "y1": 96, "x1": 28.8, "y2": 96, "x2": 27.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1621
+    },
+    {
+      "color": "door",
+      "line": { "y1": 88, "x1": 28.8, "y2": 88, "x2": 27.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1622
+    },
+    {
+      "color": "door",
+      "line": { "y1": 80, "x1": 28.8, "y2": 80, "x2": 27.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1623
+    },
+    {
+      "color": "door",
+      "line": { "y1": 72, "x1": 28.8, "y2": 72, "x2": 27.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1624
+    },
+    {
+      "color": "door",
+      "line": { "y1": 96, "x1": 36.8, "y2": 96, "x2": 35.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1625
+    },
+    {
+      "color": "door",
+      "line": { "y1": 88, "x1": 36.8, "y2": 88, "x2": 35.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1626
+    },
+    {
+      "color": "door",
+      "line": { "y1": 96, "x1": 44.8, "y2": 96, "x2": 43.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1627
+    },
+    {
+      "color": "door",
+      "line": { "y1": 88, "x1": 44.8, "y2": 88, "x2": 43.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1628
+    },
+    {
+      "color": "door",
+      "line": { "y1": 96, "x1": 52.8, "y2": 96, "x2": 51.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1629
+    },
+    {
+      "color": "door",
+      "line": { "y1": 92.8, "x1": 56, "y2": 91.2, "x2": 56 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1630
+    },
+    {
+      "color": "door",
+      "line": { "y1": 84.8, "x1": 48, "y2": 83.2, "x2": 48 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1631
+    },
+    {
+      "color": "door",
+      "line": { "y1": 84.8, "x1": 56, "y2": 83.2, "x2": 56 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1632
+    },
+    {
+      "color": "door",
+      "line": { "y1": 79.2, "x1": 48, "y2": 78.8, "x2": 48 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1633
+    },
+    {
+      "color": "door",
+      "line": { "y1": 79.2, "x1": 56, "y2": 78.8, "x2": 56 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1634
+    },
+    {
+      "color": "door",
+      "line": { "y1": 75.6, "x1": 48, "y2": 74.4, "x2": 48 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1635
+    },
+    {
+      "color": "door",
+      "line": { "y1": 75.6, "x1": 52, "y2": 74.4, "x2": 52 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1636
+    },
+    {
+      "color": "door",
+      "line": { "y1": 75.6, "x1": 56, "y2": 74.4, "x2": 56 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1637
+    },
+    {
+      "color": "door",
+      "line": { "y1": 98.4, "x1": 24, "y2": 97.6, "x2": 24 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1638
+    },
+    {
+      "color": "door",
+      "line": { "y1": 98.4, "x1": 40, "y2": 97.6, "x2": 40 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1639
+    },
+    {
+      "color": "door",
+      "line": { "y1": 98.4, "x1": 56, "y2": 97.6, "x2": 56 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1640
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 20, "y2": 100, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1641
+    },
+    {
+      "color": "door",
+      "line": { "y1": 22.8, "x1": 100, "y2": 23.2, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1642
+    },
+    {
+      "color": "door",
+      "line": { "y1": 29.6, "x1": 100, "y2": 28.4, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1643
+    },
+    {
+      "color": "door",
+      "line": { "y1": 36.8, "x1": 100, "y2": 35.2, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1644
+    },
+    {
+      "color": "door",
+      "line": { "y1": 44.8, "x1": 100, "y2": 43.2, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1645
+    },
+    {
+      "color": "door",
+      "line": { "y1": 52.8, "x1": 100, "y2": 51.2, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1646
+    },
+    {
+      "color": "door",
+      "line": { "y1": 28.8, "x1": 96, "y2": 27.2, "x2": 96 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1647
+    },
+    {
+      "color": "door",
+      "line": { "y1": 28.8, "x1": 88, "y2": 27.2, "x2": 88 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1648
+    },
+    {
+      "color": "door",
+      "line": { "y1": 28.8, "x1": 80, "y2": 27.2, "x2": 80 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1649
+    },
+    {
+      "color": "door",
+      "line": { "y1": 28.8, "x1": 72, "y2": 27.2, "x2": 72 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1650
+    },
+    {
+      "color": "door",
+      "line": { "y1": 36.8, "x1": 96, "y2": 35.2, "x2": 96 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1651
+    },
+    {
+      "color": "door",
+      "line": { "y1": 36.8, "x1": 88, "y2": 35.2, "x2": 88 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1652
+    },
+    {
+      "color": "door",
+      "line": { "y1": 44.8, "x1": 96, "y2": 43.2, "x2": 96 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1653
+    },
+    {
+      "color": "door",
+      "line": { "y1": 44.8, "x1": 88, "y2": 43.2, "x2": 88 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1654
+    },
+    {
+      "color": "door",
+      "line": { "y1": 52.8, "x1": 96, "y2": 51.2, "x2": 96 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1655
+    },
+    {
+      "color": "door",
+      "line": { "y1": 56, "x1": 92.8, "y2": 56, "x2": 91.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1656
+    },
+    {
+      "color": "door",
+      "line": { "y1": 48, "x1": 84.8, "y2": 48, "x2": 83.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1657
+    },
+    {
+      "color": "door",
+      "line": { "y1": 56, "x1": 84.8, "y2": 56, "x2": 83.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1658
+    },
+    {
+      "color": "door",
+      "line": { "y1": 48, "x1": 79.2, "y2": 48, "x2": 78.8 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1659
+    },
+    {
+      "color": "door",
+      "line": { "y1": 56, "x1": 79.2, "y2": 56, "x2": 78.8 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1660
+    },
+    {
+      "color": "door",
+      "line": { "y1": 48, "x1": 75.6, "y2": 48, "x2": 74.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1661
+    },
+    {
+      "color": "door",
+      "line": { "y1": 52, "x1": 75.6, "y2": 52, "x2": 74.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1662
+    },
+    {
+      "color": "door",
+      "line": { "y1": 56, "x1": 75.6, "y2": 56, "x2": 74.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1663
+    },
+    {
+      "color": "door",
+      "line": { "y1": 24, "x1": 98.4, "y2": 24, "x2": 97.6 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1664
+    },
+    {
+      "color": "door",
+      "line": { "y1": 40, "x1": 98.4, "y2": 40, "x2": 97.6 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1665
+    },
+    {
+      "color": "door",
+      "line": { "y1": 56, "x1": 98.4, "y2": 56, "x2": 97.6 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1666
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 97.2, "y2": 20, "x2": 96.8 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1667
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 91.6, "y2": 20, "x2": 90.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1668
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 84.8, "y2": 20, "x2": 83.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1669
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 76.8, "y2": 20, "x2": 75.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1670
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 68.8, "y2": 20, "x2": 67.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1671
+    },
+    {
+      "color": "door",
+      "line": { "y1": 24, "x1": 92.8, "y2": 24, "x2": 91.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1672
+    },
+    {
+      "color": "door",
+      "line": { "y1": 32, "x1": 92.8, "y2": 32, "x2": 91.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1673
+    },
+    {
+      "color": "door",
+      "line": { "y1": 40, "x1": 92.8, "y2": 40, "x2": 91.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1674
+    },
+    {
+      "color": "door",
+      "line": { "y1": 48, "x1": 92.8, "y2": 48, "x2": 91.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1675
+    },
+    {
+      "color": "door",
+      "line": { "y1": 24, "x1": 84.8, "y2": 24, "x2": 83.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1676
+    },
+    {
+      "color": "door",
+      "line": { "y1": 32, "x1": 84.8, "y2": 32, "x2": 83.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1677
+    },
+    {
+      "color": "door",
+      "line": { "y1": 24, "x1": 76.8, "y2": 24, "x2": 75.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1678
+    },
+    {
+      "color": "door",
+      "line": { "y1": 32, "x1": 76.8, "y2": 32, "x2": 75.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1679
+    },
+    {
+      "color": "door",
+      "line": { "y1": 24, "x1": 68.8, "y2": 24, "x2": 67.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1680
+    },
+    {
+      "color": "door",
+      "line": { "y1": 28.8, "x1": 64, "y2": 27.2, "x2": 64 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1681
+    },
+    {
+      "color": "door",
+      "line": { "y1": 36.8, "x1": 72, "y2": 35.2, "x2": 72 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1682
+    },
+    {
+      "color": "door",
+      "line": { "y1": 36.8, "x1": 64, "y2": 35.2, "x2": 64 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1683
+    },
+    {
+      "color": "door",
+      "line": { "y1": 41.2, "x1": 72, "y2": 40.8, "x2": 72 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1684
+    },
+    {
+      "color": "door",
+      "line": { "y1": 41.2, "x1": 64, "y2": 40.8, "x2": 64 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1685
+    },
+    {
+      "color": "door",
+      "line": { "y1": 45.6, "x1": 72, "y2": 44.4, "x2": 72 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1686
+    },
+    {
+      "color": "door",
+      "line": { "y1": 45.6, "x1": 68, "y2": 44.4, "x2": 68 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1687
+    },
+    {
+      "color": "door",
+      "line": { "y1": 45.6, "x1": 64, "y2": 44.4, "x2": 64 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1688
+    },
+    {
+      "color": "door",
+      "line": { "y1": 22.4, "x1": 96, "y2": 21.6, "x2": 96 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1689
+    },
+    {
+      "color": "door",
+      "line": { "y1": 22.4, "x1": 80, "y2": 21.6, "x2": 80 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1690
+    },
+    {
+      "color": "door",
+      "line": { "y1": 22.4, "x1": 64, "y2": 21.6, "x2": 64 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1691
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 100, "y2": 20, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1692
+    },
+    {
+      "color": "door",
+      "line": { "y1": 97.2, "x1": 100, "y2": 96.8, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1693
+    },
+    {
+      "color": "door",
+      "line": { "y1": 91.6, "x1": 100, "y2": 90.4, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1694
+    },
+    {
+      "color": "door",
+      "line": { "y1": 84.8, "x1": 100, "y2": 83.2, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1695
+    },
+    {
+      "color": "door",
+      "line": { "y1": 76.8, "x1": 100, "y2": 75.2, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1696
+    },
+    {
+      "color": "door",
+      "line": { "y1": 68.8, "x1": 100, "y2": 67.2, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1697
+    },
+    {
+      "color": "door",
+      "line": { "y1": 92.8, "x1": 96, "y2": 91.2, "x2": 96 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1698
+    },
+    {
+      "color": "door",
+      "line": { "y1": 92.8, "x1": 88, "y2": 91.2, "x2": 88 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1699
+    },
+    {
+      "color": "door",
+      "line": { "y1": 92.8, "x1": 80, "y2": 91.2, "x2": 80 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1700
+    },
+    {
+      "color": "door",
+      "line": { "y1": 92.8, "x1": 72, "y2": 91.2, "x2": 72 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1701
+    },
+    {
+      "color": "door",
+      "line": { "y1": 84.8, "x1": 96, "y2": 83.2, "x2": 96 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1702
+    },
+    {
+      "color": "door",
+      "line": { "y1": 84.8, "x1": 88, "y2": 83.2, "x2": 88 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1703
+    },
+    {
+      "color": "door",
+      "line": { "y1": 76.8, "x1": 96, "y2": 75.2, "x2": 96 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1704
+    },
+    {
+      "color": "door",
+      "line": { "y1": 76.8, "x1": 88, "y2": 75.2, "x2": 88 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1705
+    },
+    {
+      "color": "door",
+      "line": { "y1": 68.8, "x1": 96, "y2": 67.2, "x2": 96 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1706
+    },
+    {
+      "color": "door",
+      "line": { "y1": 64, "x1": 92.8, "y2": 64, "x2": 91.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1707
+    },
+    {
+      "color": "door",
+      "line": { "y1": 72, "x1": 84.8, "y2": 72, "x2": 83.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1708
+    },
+    {
+      "color": "door",
+      "line": { "y1": 64, "x1": 84.8, "y2": 64, "x2": 83.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1709
+    },
+    {
+      "color": "door",
+      "line": { "y1": 72, "x1": 79.2, "y2": 72, "x2": 78.8 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1710
+    },
+    {
+      "color": "door",
+      "line": { "y1": 64, "x1": 79.2, "y2": 64, "x2": 78.8 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1711
+    },
+    {
+      "color": "door",
+      "line": { "y1": 72, "x1": 75.6, "y2": 72, "x2": 74.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1712
+    },
+    {
+      "color": "door",
+      "line": { "y1": 68, "x1": 75.6, "y2": 68, "x2": 74.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1713
+    },
+    {
+      "color": "door",
+      "line": { "y1": 64, "x1": 75.6, "y2": 64, "x2": 74.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1714
+    },
+    {
+      "color": "door",
+      "line": { "y1": 96, "x1": 98.4, "y2": 96, "x2": 97.6 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1715
+    },
+    {
+      "color": "door",
+      "line": { "y1": 80, "x1": 98.4, "y2": 80, "x2": 97.6 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1716
+    },
+    {
+      "color": "door",
+      "line": { "y1": 64, "x1": 98.4, "y2": 64, "x2": 97.6 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1717
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 97.2, "y2": 100, "x2": 96.8 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1718
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 91.6, "y2": 100, "x2": 90.4 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1719
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 84.8, "y2": 100, "x2": 83.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1720
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 76.8, "y2": 100, "x2": 75.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1721
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 68.8, "y2": 100, "x2": 67.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1722
+    },
+    {
+      "color": "door",
+      "line": { "y1": 96, "x1": 92.8, "y2": 96, "x2": 91.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1723
+    },
+    {
+      "color": "door",
+      "line": { "y1": 88, "x1": 92.8, "y2": 88, "x2": 91.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1724
+    },
+    {
+      "color": "door",
+      "line": { "y1": 80, "x1": 92.8, "y2": 80, "x2": 91.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1725
+    },
+    {
+      "color": "door",
+      "line": { "y1": 72, "x1": 92.8, "y2": 72, "x2": 91.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1726
+    },
+    {
+      "color": "door",
+      "line": { "y1": 96, "x1": 84.8, "y2": 96, "x2": 83.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1727
+    },
+    {
+      "color": "door",
+      "line": { "y1": 88, "x1": 84.8, "y2": 88, "x2": 83.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1728
+    },
+    {
+      "color": "door",
+      "line": { "y1": 96, "x1": 76.8, "y2": 96, "x2": 75.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1729
+    },
+    {
+      "color": "door",
+      "line": { "y1": 88, "x1": 76.8, "y2": 88, "x2": 75.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1730
+    },
+    {
+      "color": "door",
+      "line": { "y1": 96, "x1": 68.8, "y2": 96, "x2": 67.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1731
+    },
+    {
+      "color": "door",
+      "line": { "y1": 92.8, "x1": 64, "y2": 91.2, "x2": 64 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1732
+    },
+    {
+      "color": "door",
+      "line": { "y1": 84.8, "x1": 72, "y2": 83.2, "x2": 72 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1733
+    },
+    {
+      "color": "door",
+      "line": { "y1": 84.8, "x1": 64, "y2": 83.2, "x2": 64 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1734
+    },
+    {
+      "color": "door",
+      "line": { "y1": 79.2, "x1": 72, "y2": 78.8, "x2": 72 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1735
+    },
+    {
+      "color": "door",
+      "line": { "y1": 79.2, "x1": 64, "y2": 78.8, "x2": 64 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1736
+    },
+    {
+      "color": "door",
+      "line": { "y1": 75.6, "x1": 72, "y2": 74.4, "x2": 72 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1737
+    },
+    {
+      "color": "door",
+      "line": { "y1": 75.6, "x1": 68, "y2": 74.4, "x2": 68 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1738
+    },
+    {
+      "color": "door",
+      "line": { "y1": 75.6, "x1": 64, "y2": 74.4, "x2": 64 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1739
+    },
+    {
+      "color": "door",
+      "line": { "y1": 98.4, "x1": 96, "y2": 97.6, "x2": 96 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1740
+    },
+    {
+      "color": "door",
+      "line": { "y1": 98.4, "x1": 80, "y2": 97.6, "x2": 80 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1741
+    },
+    {
+      "color": "door",
+      "line": { "y1": 98.4, "x1": 64, "y2": 97.6, "x2": 64 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1742
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 100, "y2": 100, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1743
+    },
+    {
+      "color": "door",
+      "line": { "y1": 60.8, "x1": 10, "y2": 59.2, "x2": 10 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1744
+    },
+    {
+      "color": "door",
+      "line": { "y1": 60.8, "x1": 20, "y2": 59.2, "x2": 20 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1745
+    },
+    {
+      "color": "door",
+      "line": { "y1": 10, "x1": 60.8, "y2": 10, "x2": 59.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1746
+    },
+    {
+      "color": "door",
+      "line": { "y1": 20, "x1": 60.8, "y2": 20, "x2": 59.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1747
+    },
+    {
+      "color": "door",
+      "line": { "y1": 100, "x1": 60.8, "y2": 100, "x2": 59.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1748
+    },
+    {
+      "color": "door",
+      "line": { "y1": 110, "x1": 60.8, "y2": 110, "x2": 59.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1749
+    },
+    {
+      "color": "door",
+      "line": { "y1": 60.8, "x1": 100, "y2": 59.2, "x2": 100 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1750
+    },
+    {
+      "color": "door",
+      "line": { "y1": 60.8, "x1": 110, "y2": 59.2, "x2": 110 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1751
+    },
+    {
+      "color": "door",
+      "line": { "y1": 60.8, "x1": 24, "y2": 59.2, "x2": 24 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1752
+    },
+    {
+      "color": "door",
+      "line": { "y1": 60.8, "x1": 48, "y2": 59.2, "x2": 48 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1753
+    },
+    {
+      "color": "door",
+      "line": { "y1": 24, "x1": 60.8, "y2": 24, "x2": 59.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1754
+    },
+    {
+      "color": "door",
+      "line": { "y1": 48, "x1": 60.8, "y2": 48, "x2": 59.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1755
+    },
+    {
+      "color": "door",
+      "line": { "y1": 72, "x1": 60.8, "y2": 72, "x2": 59.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1756
+    },
+    {
+      "color": "door",
+      "line": { "y1": 96, "x1": 60.8, "y2": 96, "x2": 59.2 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1757
+    },
+    {
+      "color": "door",
+      "line": { "y1": 60.8, "x1": 72, "y2": 59.2, "x2": 72 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1758
+    },
+    {
+      "color": "door",
+      "line": { "y1": 60.8, "x1": 96, "y2": 59.2, "x2": 96 },
+      "width": "NORMAL",
+      "doorType": "NORMAL",
+      "id": 1759
+    }
+  ],
+  "buildingName": "F",
+  "regions": [
+    {
+      "color": "room",
+      "id": 987,
+      "nodeId": 987,
+      "points": [
+        { "x": 0, "y": 0 },
+        { "x": 20, "y": 0 },
+        { "x": 20, "y": 20 },
+        { "x": 0, "y": 20 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 988,
+      "nodeId": 988,
+      "points": [
+        { "x": 10, "y": 20 },
+        { "x": 20, "y": 20 },
+        { "x": 20, "y": 26 },
+        { "x": 10, "y": 26 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 989,
+      "nodeId": 989,
+      "points": [
+        { "x": 10, "y": 26 },
+        { "x": 20, "y": 26 },
+        { "x": 20, "y": 32 },
+        { "x": 10, "y": 32 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 990,
+      "nodeId": 990,
+      "points": [
+        { "x": 10, "y": 32 },
+        { "x": 20, "y": 32 },
+        { "x": 20, "y": 40 },
+        { "x": 10, "y": 40 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 991,
+      "nodeId": 991,
+      "points": [
+        { "x": 10, "y": 40 },
+        { "x": 20, "y": 40 },
+        { "x": 20, "y": 48 },
+        { "x": 10, "y": 48 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 992,
+      "nodeId": 992,
+      "points": [
+        { "x": 10, "y": 48 },
+        { "x": 20, "y": 48 },
+        { "x": 20, "y": 56 },
+        { "x": 10, "y": 56 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 993,
+      "nodeId": 993,
+      "points": [
+        { "x": 20, "y": 10 },
+        { "x": 26, "y": 10 },
+        { "x": 26, "y": 20 },
+        { "x": 20, "y": 20 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 994,
+      "nodeId": 994,
+      "points": [
+        { "x": 26, "y": 10 },
+        { "x": 32, "y": 10 },
+        { "x": 32, "y": 20 },
+        { "x": 26, "y": 20 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 995,
+      "nodeId": 995,
+      "points": [
+        { "x": 32, "y": 10 },
+        { "x": 40, "y": 10 },
+        { "x": 40, "y": 20 },
+        { "x": 32, "y": 20 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 996,
+      "nodeId": 996,
+      "points": [
+        { "x": 40, "y": 10 },
+        { "x": 48, "y": 10 },
+        { "x": 48, "y": 20 },
+        { "x": 40, "y": 20 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 997,
+      "nodeId": 997,
+      "points": [
+        { "x": 48, "y": 10 },
+        { "x": 56, "y": 10 },
+        { "x": 56, "y": 20 },
+        { "x": 48, "y": 20 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 998,
+      "nodeId": 998,
+      "points": [
+        { "x": 24, "y": 24 },
+        { "x": 32, "y": 24 },
+        { "x": 32, "y": 32 },
+        { "x": 24, "y": 32 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 999,
+      "nodeId": 999,
+      "points": [
+        { "x": 32, "y": 24 },
+        { "x": 40, "y": 24 },
+        { "x": 40, "y": 32 },
+        { "x": 32, "y": 32 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1000,
+      "nodeId": 1000,
+      "points": [
+        { "x": 40, "y": 24 },
+        { "x": 48, "y": 24 },
+        { "x": 48, "y": 32 },
+        { "x": 40, "y": 32 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1001,
+      "nodeId": 1001,
+      "points": [
+        { "x": 48, "y": 24 },
+        { "x": 56, "y": 24 },
+        { "x": 56, "y": 32 },
+        { "x": 48, "y": 32 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1002,
+      "nodeId": 1002,
+      "points": [
+        { "x": 24, "y": 32 },
+        { "x": 32, "y": 32 },
+        { "x": 32, "y": 40 },
+        { "x": 24, "y": 40 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1003,
+      "nodeId": 1003,
+      "points": [
+        { "x": 24, "y": 40 },
+        { "x": 32, "y": 40 },
+        { "x": 32, "y": 48 },
+        { "x": 24, "y": 48 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1004,
+      "nodeId": 1004,
+      "points": [
+        { "x": 24, "y": 48 },
+        { "x": 32, "y": 48 },
+        { "x": 32, "y": 56 },
+        { "x": 24, "y": 56 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1005,
+      "nodeId": 1005,
+      "points": [
+        { "x": 48, "y": 32 },
+        { "x": 56, "y": 32 },
+        { "x": 56, "y": 40 },
+        { "x": 48, "y": 40 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1006,
+      "nodeId": 1006,
+      "points": [
+        { "x": 48, "y": 40 },
+        { "x": 56, "y": 40 },
+        { "x": 56, "y": 42 },
+        { "x": 48, "y": 42 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1007,
+      "nodeId": 1007,
+      "points": [
+        { "x": 48, "y": 42 },
+        { "x": 52, "y": 42 },
+        { "x": 52, "y": 48 },
+        { "x": 48, "y": 48 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1008,
+      "nodeId": 1008,
+      "points": [
+        { "x": 52, "y": 42 },
+        { "x": 56, "y": 42 },
+        { "x": 56, "y": 48 },
+        { "x": 52, "y": 48 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1009,
+      "nodeId": 1009,
+      "points": [
+        { "x": 32, "y": 48 },
+        { "x": 40, "y": 48 },
+        { "x": 40, "y": 56 },
+        { "x": 32, "y": 56 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1010,
+      "nodeId": 1010,
+      "points": [
+        { "x": 40, "y": 48 },
+        { "x": 42, "y": 48 },
+        { "x": 42, "y": 56 },
+        { "x": 40, "y": 56 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1011,
+      "nodeId": 1011,
+      "points": [
+        { "x": 42, "y": 48 },
+        { "x": 48, "y": 48 },
+        { "x": 48, "y": 52 },
+        { "x": 42, "y": 52 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1012,
+      "nodeId": 1012,
+      "points": [
+        { "x": 42, "y": 52 },
+        { "x": 48, "y": 52 },
+        { "x": 48, "y": 56 },
+        { "x": 42, "y": 56 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1013,
+      "nodeId": 1013,
+      "points": [
+        { "x": 20, "y": 20 },
+        { "x": 24, "y": 20 },
+        { "x": 24, "y": 24 },
+        { "x": 20, "y": 24 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1014,
+      "nodeId": 1014,
+      "points": [
+        { "x": 20, "y": 24 },
+        { "x": 24, "y": 24 },
+        { "x": 24, "y": 40 },
+        { "x": 20, "y": 40 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1015,
+      "nodeId": 1015,
+      "points": [
+        { "x": 20, "y": 40 },
+        { "x": 24, "y": 40 },
+        { "x": 24, "y": 56 },
+        { "x": 20, "y": 56 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1016,
+      "nodeId": 1016,
+      "points": [
+        { "x": 24, "y": 20 },
+        { "x": 40, "y": 20 },
+        { "x": 40, "y": 24 },
+        { "x": 24, "y": 24 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1017,
+      "nodeId": 1017,
+      "points": [
+        { "x": 40, "y": 20 },
+        { "x": 56, "y": 20 },
+        { "x": 56, "y": 24 },
+        { "x": 40, "y": 24 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1018,
+      "nodeId": 1018,
+      "points": [
+        { "x": 32, "y": 32 },
+        { "x": 48, "y": 32 },
+        { "x": 48, "y": 48 },
+        { "x": 32, "y": 48 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1019,
+      "nodeId": 1019,
+      "points": [
+        { "x": 100, "y": 0 },
+        { "x": 120, "y": 0 },
+        { "x": 120, "y": 20 },
+        { "x": 100, "y": 20 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1020,
+      "nodeId": 1020,
+      "points": [
+        { "x": 0, "y": 100 },
+        { "x": 20, "y": 100 },
+        { "x": 20, "y": 120 },
+        { "x": 0, "y": 120 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1021,
+      "nodeId": 1021,
+      "points": [
+        { "x": 100, "y": 100 },
+        { "x": 120, "y": 100 },
+        { "x": 120, "y": 120 },
+        { "x": 100, "y": 120 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1022,
+      "nodeId": 1022,
+      "points": [
+        { "x": 100, "y": 20 },
+        { "x": 110, "y": 20 },
+        { "x": 110, "y": 26 },
+        { "x": 100, "y": 26 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1023,
+      "nodeId": 1023,
+      "points": [
+        { "x": 10, "y": 94 },
+        { "x": 20, "y": 94 },
+        { "x": 20, "y": 100 },
+        { "x": 10, "y": 100 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1024,
+      "nodeId": 1024,
+      "points": [
+        { "x": 100, "y": 94 },
+        { "x": 110, "y": 94 },
+        { "x": 110, "y": 100 },
+        { "x": 100, "y": 100 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1025,
+      "nodeId": 1025,
+      "points": [
+        { "x": 100, "y": 26 },
+        { "x": 110, "y": 26 },
+        { "x": 110, "y": 32 },
+        { "x": 100, "y": 32 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1026,
+      "nodeId": 1026,
+      "points": [
+        { "x": 10, "y": 88 },
+        { "x": 20, "y": 88 },
+        { "x": 20, "y": 94 },
+        { "x": 10, "y": 94 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1027,
+      "nodeId": 1027,
+      "points": [
+        { "x": 100, "y": 88 },
+        { "x": 110, "y": 88 },
+        { "x": 110, "y": 94 },
+        { "x": 100, "y": 94 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1028,
+      "nodeId": 1028,
+      "points": [
+        { "x": 100, "y": 32 },
+        { "x": 110, "y": 32 },
+        { "x": 110, "y": 40 },
+        { "x": 100, "y": 40 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1029,
+      "nodeId": 1029,
+      "points": [
+        { "x": 10, "y": 80 },
+        { "x": 20, "y": 80 },
+        { "x": 20, "y": 88 },
+        { "x": 10, "y": 88 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1030,
+      "nodeId": 1030,
+      "points": [
+        { "x": 100, "y": 80 },
+        { "x": 110, "y": 80 },
+        { "x": 110, "y": 88 },
+        { "x": 100, "y": 88 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1031,
+      "nodeId": 1031,
+      "points": [
+        { "x": 100, "y": 40 },
+        { "x": 110, "y": 40 },
+        { "x": 110, "y": 48 },
+        { "x": 100, "y": 48 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1032,
+      "nodeId": 1032,
+      "points": [
+        { "x": 10, "y": 72 },
+        { "x": 20, "y": 72 },
+        { "x": 20, "y": 80 },
+        { "x": 10, "y": 80 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1033,
+      "nodeId": 1033,
+      "points": [
+        { "x": 100, "y": 72 },
+        { "x": 110, "y": 72 },
+        { "x": 110, "y": 80 },
+        { "x": 100, "y": 80 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1034,
+      "nodeId": 1034,
+      "points": [
+        { "x": 100, "y": 48 },
+        { "x": 110, "y": 48 },
+        { "x": 110, "y": 56 },
+        { "x": 100, "y": 56 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1035,
+      "nodeId": 1035,
+      "points": [
+        { "x": 10, "y": 64 },
+        { "x": 20, "y": 64 },
+        { "x": 20, "y": 72 },
+        { "x": 10, "y": 72 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1036,
+      "nodeId": 1036,
+      "points": [
+        { "x": 100, "y": 64 },
+        { "x": 110, "y": 64 },
+        { "x": 110, "y": 72 },
+        { "x": 100, "y": 72 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1037,
+      "nodeId": 1037,
+      "points": [
+        { "x": 94, "y": 10 },
+        { "x": 100, "y": 10 },
+        { "x": 100, "y": 20 },
+        { "x": 94, "y": 20 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1038,
+      "nodeId": 1038,
+      "points": [
+        { "x": 20, "y": 100 },
+        { "x": 26, "y": 100 },
+        { "x": 26, "y": 110 },
+        { "x": 20, "y": 110 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1039,
+      "nodeId": 1039,
+      "points": [
+        { "x": 94, "y": 100 },
+        { "x": 100, "y": 100 },
+        { "x": 100, "y": 110 },
+        { "x": 94, "y": 110 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1040,
+      "nodeId": 1040,
+      "points": [
+        { "x": 88, "y": 10 },
+        { "x": 94, "y": 10 },
+        { "x": 94, "y": 20 },
+        { "x": 88, "y": 20 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1041,
+      "nodeId": 1041,
+      "points": [
+        { "x": 26, "y": 100 },
+        { "x": 32, "y": 100 },
+        { "x": 32, "y": 110 },
+        { "x": 26, "y": 110 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1042,
+      "nodeId": 1042,
+      "points": [
+        { "x": 88, "y": 100 },
+        { "x": 94, "y": 100 },
+        { "x": 94, "y": 110 },
+        { "x": 88, "y": 110 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1043,
+      "nodeId": 1043,
+      "points": [
+        { "x": 80, "y": 10 },
+        { "x": 88, "y": 10 },
+        { "x": 88, "y": 20 },
+        { "x": 80, "y": 20 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1044,
+      "nodeId": 1044,
+      "points": [
+        { "x": 32, "y": 100 },
+        { "x": 40, "y": 100 },
+        { "x": 40, "y": 110 },
+        { "x": 32, "y": 110 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1045,
+      "nodeId": 1045,
+      "points": [
+        { "x": 80, "y": 100 },
+        { "x": 88, "y": 100 },
+        { "x": 88, "y": 110 },
+        { "x": 80, "y": 110 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1046,
+      "nodeId": 1046,
+      "points": [
+        { "x": 72, "y": 10 },
+        { "x": 80, "y": 10 },
+        { "x": 80, "y": 20 },
+        { "x": 72, "y": 20 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1047,
+      "nodeId": 1047,
+      "points": [
+        { "x": 40, "y": 100 },
+        { "x": 48, "y": 100 },
+        { "x": 48, "y": 110 },
+        { "x": 40, "y": 110 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1048,
+      "nodeId": 1048,
+      "points": [
+        { "x": 72, "y": 100 },
+        { "x": 80, "y": 100 },
+        { "x": 80, "y": 110 },
+        { "x": 72, "y": 110 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1049,
+      "nodeId": 1049,
+      "points": [
+        { "x": 64, "y": 10 },
+        { "x": 72, "y": 10 },
+        { "x": 72, "y": 20 },
+        { "x": 64, "y": 20 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1050,
+      "nodeId": 1050,
+      "points": [
+        { "x": 48, "y": 100 },
+        { "x": 56, "y": 100 },
+        { "x": 56, "y": 110 },
+        { "x": 48, "y": 110 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1051,
+      "nodeId": 1051,
+      "points": [
+        { "x": 64, "y": 100 },
+        { "x": 72, "y": 100 },
+        { "x": 72, "y": 110 },
+        { "x": 64, "y": 110 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1052,
+      "nodeId": 1052,
+      "points": [
+        { "x": 88, "y": 24 },
+        { "x": 96, "y": 24 },
+        { "x": 96, "y": 32 },
+        { "x": 88, "y": 32 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1053,
+      "nodeId": 1053,
+      "points": [
+        { "x": 24, "y": 88 },
+        { "x": 32, "y": 88 },
+        { "x": 32, "y": 96 },
+        { "x": 24, "y": 96 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1054,
+      "nodeId": 1054,
+      "points": [
+        { "x": 88, "y": 88 },
+        { "x": 96, "y": 88 },
+        { "x": 96, "y": 96 },
+        { "x": 88, "y": 96 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1055,
+      "nodeId": 1055,
+      "points": [
+        { "x": 80, "y": 24 },
+        { "x": 88, "y": 24 },
+        { "x": 88, "y": 32 },
+        { "x": 80, "y": 32 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1056,
+      "nodeId": 1056,
+      "points": [
+        { "x": 32, "y": 88 },
+        { "x": 40, "y": 88 },
+        { "x": 40, "y": 96 },
+        { "x": 32, "y": 96 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1057,
+      "nodeId": 1057,
+      "points": [
+        { "x": 80, "y": 88 },
+        { "x": 88, "y": 88 },
+        { "x": 88, "y": 96 },
+        { "x": 80, "y": 96 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1058,
+      "nodeId": 1058,
+      "points": [
+        { "x": 72, "y": 24 },
+        { "x": 80, "y": 24 },
+        { "x": 80, "y": 32 },
+        { "x": 72, "y": 32 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1059,
+      "nodeId": 1059,
+      "points": [
+        { "x": 40, "y": 88 },
+        { "x": 48, "y": 88 },
+        { "x": 48, "y": 96 },
+        { "x": 40, "y": 96 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1060,
+      "nodeId": 1060,
+      "points": [
+        { "x": 72, "y": 88 },
+        { "x": 80, "y": 88 },
+        { "x": 80, "y": 96 },
+        { "x": 72, "y": 96 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1061,
+      "nodeId": 1061,
+      "points": [
+        { "x": 64, "y": 24 },
+        { "x": 72, "y": 24 },
+        { "x": 72, "y": 32 },
+        { "x": 64, "y": 32 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1062,
+      "nodeId": 1062,
+      "points": [
+        { "x": 48, "y": 88 },
+        { "x": 56, "y": 88 },
+        { "x": 56, "y": 96 },
+        { "x": 48, "y": 96 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1063,
+      "nodeId": 1063,
+      "points": [
+        { "x": 64, "y": 88 },
+        { "x": 72, "y": 88 },
+        { "x": 72, "y": 96 },
+        { "x": 64, "y": 96 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1064,
+      "nodeId": 1064,
+      "points": [
+        { "x": 88, "y": 32 },
+        { "x": 96, "y": 32 },
+        { "x": 96, "y": 40 },
+        { "x": 88, "y": 40 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1065,
+      "nodeId": 1065,
+      "points": [
+        { "x": 24, "y": 80 },
+        { "x": 32, "y": 80 },
+        { "x": 32, "y": 88 },
+        { "x": 24, "y": 88 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1066,
+      "nodeId": 1066,
+      "points": [
+        { "x": 88, "y": 80 },
+        { "x": 96, "y": 80 },
+        { "x": 96, "y": 88 },
+        { "x": 88, "y": 88 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1067,
+      "nodeId": 1067,
+      "points": [
+        { "x": 88, "y": 40 },
+        { "x": 96, "y": 40 },
+        { "x": 96, "y": 48 },
+        { "x": 88, "y": 48 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1068,
+      "nodeId": 1068,
+      "points": [
+        { "x": 24, "y": 72 },
+        { "x": 32, "y": 72 },
+        { "x": 32, "y": 80 },
+        { "x": 24, "y": 80 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1069,
+      "nodeId": 1069,
+      "points": [
+        { "x": 88, "y": 72 },
+        { "x": 96, "y": 72 },
+        { "x": 96, "y": 80 },
+        { "x": 88, "y": 80 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1070,
+      "nodeId": 1070,
+      "points": [
+        { "x": 88, "y": 48 },
+        { "x": 96, "y": 48 },
+        { "x": 96, "y": 56 },
+        { "x": 88, "y": 56 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1071,
+      "nodeId": 1071,
+      "points": [
+        { "x": 24, "y": 64 },
+        { "x": 32, "y": 64 },
+        { "x": 32, "y": 72 },
+        { "x": 24, "y": 72 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1072,
+      "nodeId": 1072,
+      "points": [
+        { "x": 88, "y": 64 },
+        { "x": 96, "y": 64 },
+        { "x": 96, "y": 72 },
+        { "x": 88, "y": 72 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1073,
+      "nodeId": 1073,
+      "points": [
+        { "x": 64, "y": 32 },
+        { "x": 72, "y": 32 },
+        { "x": 72, "y": 40 },
+        { "x": 64, "y": 40 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1074,
+      "nodeId": 1074,
+      "points": [
+        { "x": 48, "y": 80 },
+        { "x": 56, "y": 80 },
+        { "x": 56, "y": 88 },
+        { "x": 48, "y": 88 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1075,
+      "nodeId": 1075,
+      "points": [
+        { "x": 64, "y": 80 },
+        { "x": 72, "y": 80 },
+        { "x": 72, "y": 88 },
+        { "x": 64, "y": 88 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1076,
+      "nodeId": 1076,
+      "points": [
+        { "x": 64, "y": 40 },
+        { "x": 72, "y": 40 },
+        { "x": 72, "y": 42 },
+        { "x": 64, "y": 42 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1077,
+      "nodeId": 1077,
+      "points": [
+        { "x": 48, "y": 78 },
+        { "x": 56, "y": 78 },
+        { "x": 56, "y": 80 },
+        { "x": 48, "y": 80 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1078,
+      "nodeId": 1078,
+      "points": [
+        { "x": 64, "y": 78 },
+        { "x": 72, "y": 78 },
+        { "x": 72, "y": 80 },
+        { "x": 64, "y": 80 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1079,
+      "nodeId": 1079,
+      "points": [
+        { "x": 68, "y": 42 },
+        { "x": 72, "y": 42 },
+        { "x": 72, "y": 48 },
+        { "x": 68, "y": 48 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1080,
+      "nodeId": 1080,
+      "points": [
+        { "x": 48, "y": 72 },
+        { "x": 52, "y": 72 },
+        { "x": 52, "y": 78 },
+        { "x": 48, "y": 78 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1081,
+      "nodeId": 1081,
+      "points": [
+        { "x": 68, "y": 72 },
+        { "x": 72, "y": 72 },
+        { "x": 72, "y": 78 },
+        { "x": 68, "y": 78 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1082,
+      "nodeId": 1082,
+      "points": [
+        { "x": 64, "y": 42 },
+        { "x": 68, "y": 42 },
+        { "x": 68, "y": 48 },
+        { "x": 64, "y": 48 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1083,
+      "nodeId": 1083,
+      "points": [
+        { "x": 52, "y": 72 },
+        { "x": 56, "y": 72 },
+        { "x": 56, "y": 78 },
+        { "x": 52, "y": 78 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1084,
+      "nodeId": 1084,
+      "points": [
+        { "x": 64, "y": 72 },
+        { "x": 68, "y": 72 },
+        { "x": 68, "y": 78 },
+        { "x": 64, "y": 78 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1085,
+      "nodeId": 1085,
+      "points": [
+        { "x": 80, "y": 48 },
+        { "x": 88, "y": 48 },
+        { "x": 88, "y": 56 },
+        { "x": 80, "y": 56 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1086,
+      "nodeId": 1086,
+      "points": [
+        { "x": 32, "y": 64 },
+        { "x": 40, "y": 64 },
+        { "x": 40, "y": 72 },
+        { "x": 32, "y": 72 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1087,
+      "nodeId": 1087,
+      "points": [
+        { "x": 80, "y": 64 },
+        { "x": 88, "y": 64 },
+        { "x": 88, "y": 72 },
+        { "x": 80, "y": 72 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1088,
+      "nodeId": 1088,
+      "points": [
+        { "x": 78, "y": 48 },
+        { "x": 80, "y": 48 },
+        { "x": 80, "y": 56 },
+        { "x": 78, "y": 56 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1089,
+      "nodeId": 1089,
+      "points": [
+        { "x": 40, "y": 64 },
+        { "x": 42, "y": 64 },
+        { "x": 42, "y": 72 },
+        { "x": 40, "y": 72 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1090,
+      "nodeId": 1090,
+      "points": [
+        { "x": 78, "y": 64 },
+        { "x": 80, "y": 64 },
+        { "x": 80, "y": 72 },
+        { "x": 78, "y": 72 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1091,
+      "nodeId": 1091,
+      "points": [
+        { "x": 72, "y": 48 },
+        { "x": 78, "y": 48 },
+        { "x": 78, "y": 52 },
+        { "x": 72, "y": 52 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1092,
+      "nodeId": 1092,
+      "points": [
+        { "x": 42, "y": 68 },
+        { "x": 48, "y": 68 },
+        { "x": 48, "y": 72 },
+        { "x": 42, "y": 72 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1093,
+      "nodeId": 1093,
+      "points": [
+        { "x": 72, "y": 68 },
+        { "x": 78, "y": 68 },
+        { "x": 78, "y": 72 },
+        { "x": 72, "y": 72 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1094,
+      "nodeId": 1094,
+      "points": [
+        { "x": 72, "y": 52 },
+        { "x": 78, "y": 52 },
+        { "x": 78, "y": 56 },
+        { "x": 72, "y": 56 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1095,
+      "nodeId": 1095,
+      "points": [
+        { "x": 42, "y": 64 },
+        { "x": 48, "y": 64 },
+        { "x": 48, "y": 68 },
+        { "x": 42, "y": 68 }
+      ]
+    },
+    {
+      "color": "room",
+      "id": 1096,
+      "nodeId": 1096,
+      "points": [
+        { "x": 72, "y": 64 },
+        { "x": 78, "y": 64 },
+        { "x": 78, "y": 68 },
+        { "x": 72, "y": 68 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1097,
+      "nodeId": 1097,
+      "points": [
+        { "x": 96, "y": 20 },
+        { "x": 100, "y": 20 },
+        { "x": 100, "y": 24 },
+        { "x": 96, "y": 24 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1098,
+      "nodeId": 1098,
+      "points": [
+        { "x": 20, "y": 96 },
+        { "x": 24, "y": 96 },
+        { "x": 24, "y": 100 },
+        { "x": 20, "y": 100 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1099,
+      "nodeId": 1099,
+      "points": [
+        { "x": 96, "y": 96 },
+        { "x": 100, "y": 96 },
+        { "x": 100, "y": 100 },
+        { "x": 96, "y": 100 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1100,
+      "nodeId": 1100,
+      "points": [
+        { "x": 96, "y": 24 },
+        { "x": 100, "y": 24 },
+        { "x": 100, "y": 40 },
+        { "x": 96, "y": 40 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1101,
+      "nodeId": 1101,
+      "points": [
+        { "x": 20, "y": 80 },
+        { "x": 24, "y": 80 },
+        { "x": 24, "y": 96 },
+        { "x": 20, "y": 96 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1102,
+      "nodeId": 1102,
+      "points": [
+        { "x": 96, "y": 80 },
+        { "x": 100, "y": 80 },
+        { "x": 100, "y": 96 },
+        { "x": 96, "y": 96 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1103,
+      "nodeId": 1103,
+      "points": [
+        { "x": 96, "y": 40 },
+        { "x": 100, "y": 40 },
+        { "x": 100, "y": 56 },
+        { "x": 96, "y": 56 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1104,
+      "nodeId": 1104,
+      "points": [
+        { "x": 20, "y": 64 },
+        { "x": 24, "y": 64 },
+        { "x": 24, "y": 80 },
+        { "x": 20, "y": 80 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1105,
+      "nodeId": 1105,
+      "points": [
+        { "x": 96, "y": 64 },
+        { "x": 100, "y": 64 },
+        { "x": 100, "y": 80 },
+        { "x": 96, "y": 80 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1106,
+      "nodeId": 1106,
+      "points": [
+        { "x": 80, "y": 20 },
+        { "x": 96, "y": 20 },
+        { "x": 96, "y": 24 },
+        { "x": 80, "y": 24 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1107,
+      "nodeId": 1107,
+      "points": [
+        { "x": 24, "y": 96 },
+        { "x": 40, "y": 96 },
+        { "x": 40, "y": 100 },
+        { "x": 24, "y": 100 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1108,
+      "nodeId": 1108,
+      "points": [
+        { "x": 80, "y": 96 },
+        { "x": 96, "y": 96 },
+        { "x": 96, "y": 100 },
+        { "x": 80, "y": 100 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1109,
+      "nodeId": 1109,
+      "points": [
+        { "x": 64, "y": 20 },
+        { "x": 80, "y": 20 },
+        { "x": 80, "y": 24 },
+        { "x": 64, "y": 24 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1110,
+      "nodeId": 1110,
+      "points": [
+        { "x": 40, "y": 96 },
+        { "x": 56, "y": 96 },
+        { "x": 56, "y": 100 },
+        { "x": 40, "y": 100 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1111,
+      "nodeId": 1111,
+      "points": [
+        { "x": 64, "y": 96 },
+        { "x": 80, "y": 96 },
+        { "x": 80, "y": 100 },
+        { "x": 64, "y": 100 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1112,
+      "nodeId": 1112,
+      "points": [
+        { "x": 72, "y": 32 },
+        { "x": 88, "y": 32 },
+        { "x": 88, "y": 48 },
+        { "x": 72, "y": 48 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1113,
+      "nodeId": 1113,
+      "points": [
+        { "x": 32, "y": 72 },
+        { "x": 48, "y": 72 },
+        { "x": 48, "y": 88 },
+        { "x": 32, "y": 88 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1114,
+      "nodeId": 1114,
+      "points": [
+        { "x": 72, "y": 72 },
+        { "x": 88, "y": 72 },
+        { "x": 88, "y": 88 },
+        { "x": 72, "y": 88 }
+      ]
+    },
+    {
+      "color": "staircase",
+      "id": 1115,
+      "nodeId": 1115,
+      "points": [
+        { "x": 10, "y": 56 },
+        { "x": 20, "y": 56 },
+        { "x": 20, "y": 64 },
+        { "x": 10, "y": 64 }
+      ]
+    },
+    {
+      "color": "staircase",
+      "id": 1116,
+      "nodeId": 1116,
+      "points": [
+        { "x": 56, "y": 10 },
+        { "x": 64, "y": 10 },
+        { "x": 64, "y": 20 },
+        { "x": 56, "y": 20 }
+      ]
+    },
+    {
+      "color": "staircase",
+      "id": 1117,
+      "nodeId": 1117,
+      "points": [
+        { "x": 56, "y": 100 },
+        { "x": 64, "y": 100 },
+        { "x": 64, "y": 110 },
+        { "x": 56, "y": 110 }
+      ]
+    },
+    {
+      "color": "staircase",
+      "id": 1118,
+      "nodeId": 1118,
+      "points": [
+        { "x": 100, "y": 56 },
+        { "x": 110, "y": 56 },
+        { "x": 110, "y": 64 },
+        { "x": 100, "y": 64 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1119,
+      "nodeId": 1119,
+      "points": [
+        { "x": 20, "y": 56 },
+        { "x": 24, "y": 56 },
+        { "x": 24, "y": 64 },
+        { "x": 20, "y": 64 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1120,
+      "nodeId": 1120,
+      "points": [
+        { "x": 24, "y": 56 },
+        { "x": 48, "y": 56 },
+        { "x": 48, "y": 64 },
+        { "x": 24, "y": 64 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1121,
+      "nodeId": 1121,
+      "points": [
+        { "x": 56, "y": 20 },
+        { "x": 64, "y": 20 },
+        { "x": 64, "y": 24 },
+        { "x": 56, "y": 24 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1122,
+      "nodeId": 1122,
+      "points": [
+        { "x": 56, "y": 24 },
+        { "x": 64, "y": 24 },
+        { "x": 64, "y": 48 },
+        { "x": 56, "y": 48 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1123,
+      "nodeId": 1123,
+      "points": [
+        { "x": 56, "y": 72 },
+        { "x": 64, "y": 72 },
+        { "x": 64, "y": 96 },
+        { "x": 56, "y": 96 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1124,
+      "nodeId": 1124,
+      "points": [
+        { "x": 56, "y": 96 },
+        { "x": 64, "y": 96 },
+        { "x": 64, "y": 100 },
+        { "x": 56, "y": 100 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1125,
+      "nodeId": 1125,
+      "points": [
+        { "x": 72, "y": 56 },
+        { "x": 96, "y": 56 },
+        { "x": 96, "y": 64 },
+        { "x": 72, "y": 64 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1126,
+      "nodeId": 1126,
+      "points": [
+        { "x": 96, "y": 56 },
+        { "x": 100, "y": 56 },
+        { "x": 100, "y": 64 },
+        { "x": 96, "y": 64 }
+      ]
+    },
+    {
+      "color": "hallway",
+      "id": 1127,
+      "nodeId": 1127,
+      "points": [
+        { "x": 48, "y": 48 },
+        { "x": 72, "y": 48 },
+        { "x": 72, "y": 72 },
+        { "x": 48, "y": 72 }
+      ]
+    }
+  ],
+  "walls": [],
+  "virtualDoors": [],
+  "nodes": [
+    {
+      "nodeSize": 0,
+      "name": 987,
+      "description": "",
+      "id": 987,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 0, "y": 0 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 988,
+      "description": "",
+      "id": 988,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 10, "y": 20 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 989,
+      "description": "",
+      "id": 989,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 10, "y": 26 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 990,
+      "description": "",
+      "id": 990,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 10, "y": 32 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 991,
+      "description": "",
+      "id": 991,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 10, "y": 40 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 992,
+      "description": "",
+      "id": 992,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 10, "y": 48 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 993,
+      "description": "",
+      "id": 993,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 20, "y": 10 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 994,
+      "description": "",
+      "id": 994,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 26, "y": 10 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 995,
+      "description": "",
+      "id": 995,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 32, "y": 10 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 996,
+      "description": "",
+      "id": 996,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 40, "y": 10 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 997,
+      "description": "",
+      "id": 997,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 48, "y": 10 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 998,
+      "description": "",
+      "id": 998,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 24, "y": 24 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 999,
+      "description": "",
+      "id": 999,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 32, "y": 24 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1000,
+      "description": "",
+      "id": 1000,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 40, "y": 24 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1001,
+      "description": "",
+      "id": 1001,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 48, "y": 24 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1002,
+      "description": "",
+      "id": 1002,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 24, "y": 32 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1003,
+      "description": "",
+      "id": 1003,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 24, "y": 40 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1004,
+      "description": "",
+      "id": 1004,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 24, "y": 48 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1005,
+      "description": "",
+      "id": 1005,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 48, "y": 32 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1006,
+      "description": "",
+      "id": 1006,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 48, "y": 40 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1007,
+      "description": "",
+      "id": 1007,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 48, "y": 42 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1008,
+      "description": "",
+      "id": 1008,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 52, "y": 42 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1009,
+      "description": "",
+      "id": 1009,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 32, "y": 48 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1010,
+      "description": "",
+      "id": 1010,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 40, "y": 48 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1011,
+      "description": "",
+      "id": 1011,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 42, "y": 48 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1012,
+      "description": "",
+      "id": 1012,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 42, "y": 52 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1013,
+      "description": "",
+      "id": 1013,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 20, "y": 20 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1014,
+      "description": "",
+      "id": 1014,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 20, "y": 24 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1015,
+      "description": "",
+      "id": 1015,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 20, "y": 40 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1016,
+      "description": "",
+      "id": 1016,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 24, "y": 20 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1017,
+      "description": "",
+      "id": 1017,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 40, "y": 20 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1018,
+      "description": "",
+      "id": 1018,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 32, "y": 32 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1019,
+      "description": "",
+      "id": 1019,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 0 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1020,
+      "description": "",
+      "id": 1020,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 0, "y": 100 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1021,
+      "description": "",
+      "id": 1021,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 100 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1022,
+      "description": "",
+      "id": 1022,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 20 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1023,
+      "description": "",
+      "id": 1023,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 10, "y": 94 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1024,
+      "description": "",
+      "id": 1024,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 94 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1025,
+      "description": "",
+      "id": 1025,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 26 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1026,
+      "description": "",
+      "id": 1026,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 10, "y": 88 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1027,
+      "description": "",
+      "id": 1027,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 88 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1028,
+      "description": "",
+      "id": 1028,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 32 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1029,
+      "description": "",
+      "id": 1029,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 10, "y": 80 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1030,
+      "description": "",
+      "id": 1030,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 80 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1031,
+      "description": "",
+      "id": 1031,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 40 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1032,
+      "description": "",
+      "id": 1032,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 10, "y": 72 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1033,
+      "description": "",
+      "id": 1033,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 72 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1034,
+      "description": "",
+      "id": 1034,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 48 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1035,
+      "description": "",
+      "id": 1035,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 10, "y": 64 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1036,
+      "description": "",
+      "id": 1036,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 64 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1037,
+      "description": "",
+      "id": 1037,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 94, "y": 10 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1038,
+      "description": "",
+      "id": 1038,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 20, "y": 100 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1039,
+      "description": "",
+      "id": 1039,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 94, "y": 100 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1040,
+      "description": "",
+      "id": 1040,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 88, "y": 10 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1041,
+      "description": "",
+      "id": 1041,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 26, "y": 100 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1042,
+      "description": "",
+      "id": 1042,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 88, "y": 100 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1043,
+      "description": "",
+      "id": 1043,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 80, "y": 10 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1044,
+      "description": "",
+      "id": 1044,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 32, "y": 100 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1045,
+      "description": "",
+      "id": 1045,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 80, "y": 100 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1046,
+      "description": "",
+      "id": 1046,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 72, "y": 10 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1047,
+      "description": "",
+      "id": 1047,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 40, "y": 100 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1048,
+      "description": "",
+      "id": 1048,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 72, "y": 100 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1049,
+      "description": "",
+      "id": 1049,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 64, "y": 10 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1050,
+      "description": "",
+      "id": 1050,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 48, "y": 100 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1051,
+      "description": "",
+      "id": 1051,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 64, "y": 100 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1052,
+      "description": "",
+      "id": 1052,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 88, "y": 24 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1053,
+      "description": "",
+      "id": 1053,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 24, "y": 88 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1054,
+      "description": "",
+      "id": 1054,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 88, "y": 88 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1055,
+      "description": "",
+      "id": 1055,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 80, "y": 24 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1056,
+      "description": "",
+      "id": 1056,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 32, "y": 88 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1057,
+      "description": "",
+      "id": 1057,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 80, "y": 88 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1058,
+      "description": "",
+      "id": 1058,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 72, "y": 24 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1059,
+      "description": "",
+      "id": 1059,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 40, "y": 88 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1060,
+      "description": "",
+      "id": 1060,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 72, "y": 88 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1061,
+      "description": "",
+      "id": 1061,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 64, "y": 24 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1062,
+      "description": "",
+      "id": 1062,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 48, "y": 88 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1063,
+      "description": "",
+      "id": 1063,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 64, "y": 88 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1064,
+      "description": "",
+      "id": 1064,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 88, "y": 32 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1065,
+      "description": "",
+      "id": 1065,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 24, "y": 80 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1066,
+      "description": "",
+      "id": 1066,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 88, "y": 80 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1067,
+      "description": "",
+      "id": 1067,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 88, "y": 40 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1068,
+      "description": "",
+      "id": 1068,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 24, "y": 72 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1069,
+      "description": "",
+      "id": 1069,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 88, "y": 72 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1070,
+      "description": "",
+      "id": 1070,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 88, "y": 48 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1071,
+      "description": "",
+      "id": 1071,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 24, "y": 64 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1072,
+      "description": "",
+      "id": 1072,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 88, "y": 64 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1073,
+      "description": "",
+      "id": 1073,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 64, "y": 32 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1074,
+      "description": "",
+      "id": 1074,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 48, "y": 80 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1075,
+      "description": "",
+      "id": 1075,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 64, "y": 80 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1076,
+      "description": "",
+      "id": 1076,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 64, "y": 40 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1077,
+      "description": "",
+      "id": 1077,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 48, "y": 78 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1078,
+      "description": "",
+      "id": 1078,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 64, "y": 78 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1079,
+      "description": "",
+      "id": 1079,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 68, "y": 42 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1080,
+      "description": "",
+      "id": 1080,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 48, "y": 72 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1081,
+      "description": "",
+      "id": 1081,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 68, "y": 72 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1082,
+      "description": "",
+      "id": 1082,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 64, "y": 42 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1083,
+      "description": "",
+      "id": 1083,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 52, "y": 72 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1084,
+      "description": "",
+      "id": 1084,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 64, "y": 72 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1085,
+      "description": "",
+      "id": 1085,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 80, "y": 48 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1086,
+      "description": "",
+      "id": 1086,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 32, "y": 64 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1087,
+      "description": "",
+      "id": 1087,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 80, "y": 64 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1088,
+      "description": "",
+      "id": 1088,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 78, "y": 48 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1089,
+      "description": "",
+      "id": 1089,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 40, "y": 64 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1090,
+      "description": "",
+      "id": 1090,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 78, "y": 64 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1091,
+      "description": "",
+      "id": 1091,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 72, "y": 48 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1092,
+      "description": "",
+      "id": 1092,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 42, "y": 68 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1093,
+      "description": "",
+      "id": 1093,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 72, "y": 68 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1094,
+      "description": "",
+      "id": 1094,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 72, "y": 52 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1095,
+      "description": "",
+      "id": 1095,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 42, "y": 64 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1096,
+      "description": "",
+      "id": 1096,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 72, "y": 64 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "ROOM"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1097,
+      "description": "",
+      "id": 1097,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 96, "y": 20 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1098,
+      "description": "",
+      "id": 1098,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 20, "y": 96 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1099,
+      "description": "",
+      "id": 1099,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 96, "y": 96 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1100,
+      "description": "",
+      "id": 1100,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 96, "y": 24 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1101,
+      "description": "",
+      "id": 1101,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 20, "y": 80 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1102,
+      "description": "",
+      "id": 1102,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 96, "y": 80 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1103,
+      "description": "",
+      "id": 1103,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 96, "y": 40 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1104,
+      "description": "",
+      "id": 1104,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 20, "y": 64 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1105,
+      "description": "",
+      "id": 1105,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 96, "y": 64 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1106,
+      "description": "",
+      "id": 1106,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 80, "y": 20 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1107,
+      "description": "",
+      "id": 1107,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 24, "y": 96 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1108,
+      "description": "",
+      "id": 1108,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 80, "y": 96 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1109,
+      "description": "",
+      "id": 1109,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 64, "y": 20 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1110,
+      "description": "",
+      "id": 1110,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 40, "y": 96 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1111,
+      "description": "",
+      "id": 1111,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 64, "y": 96 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1112,
+      "description": "",
+      "id": 1112,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 72, "y": 32 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1113,
+      "description": "",
+      "id": 1113,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 32, "y": 72 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1114,
+      "description": "",
+      "id": 1114,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 72, "y": 72 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1115,
+      "description": "",
+      "id": 1115,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 10, "y": 56 },
+        "show": "false",
+        "fontSize": 1
+      },
+      "type": "STAIR"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1116,
+      "description": "",
+      "id": 1116,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 56, "y": 10 },
+        "show": "false",
+        "fontSize": 1
+      },
+      "type": "STAIR"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1117,
+      "description": "",
+      "id": 1117,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 56, "y": 100 },
+        "show": "false",
+        "fontSize": 1
+      },
+      "type": "STAIR"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1118,
+      "description": "",
+      "id": 1118,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 100, "y": 56 },
+        "show": "false",
+        "fontSize": 1
+      },
+      "type": "STAIR"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1119,
+      "description": "",
+      "id": 1119,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 20, "y": 56 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1120,
+      "description": "",
+      "id": 1120,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 24, "y": 56 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1121,
+      "description": "",
+      "id": 1121,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 56, "y": 20 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1122,
+      "description": "",
+      "id": 1122,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 56, "y": 24 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1123,
+      "description": "",
+      "id": 1123,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 56, "y": 72 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1124,
+      "description": "",
+      "id": 1124,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 56, "y": 96 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1125,
+      "description": "",
+      "id": 1125,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 72, "y": 56 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1126,
+      "description": "",
+      "id": 1126,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 96, "y": 56 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    },
+    {
+      "nodeSize": 0,
+      "name": 1127,
+      "description": "",
+      "id": 1127,
+      "shopId": -1,
+      "labelConfig": {
+        "pos": { "x": 48, "y": 48 },
+        "show": "true",
+        "fontSize": 1
+      },
+      "type": "HALLWAY"
+    }
+  ],
+  "floorNumber": 7,
+  "version": "0.5",
+  "config": {
+    "colors": {
+      "door": "#a2a1a1",
+      "staircase": "#d1ed83",
+      "hallway": "#ffffff",
+      "room": "#f4f4f4"
+    }
+  },
+  "createDate": "2017-05-25T17:55:16.506Z"
+}

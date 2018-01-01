@@ -1,0 +1,698 @@
+{
+  "startTime": 1689,
+  "semanticTraces": [
+    {
+      "data": [
+        {
+          "regionName": "7F Hallway 1122",
+          "x": 61.65067687700082,
+          "y": 36.437629828793014,
+          "startTime": 0,
+          "endTime": 15,
+          "event": "pass-by",
+          "roomID": 1122
+        },
+        {
+          "regionName": "7F Hallway 1127",
+          "x": 61.14794157703564,
+          "y": 49.83478747058743,
+          "startTime": 20,
+          "endTime": 25,
+          "event": "pass-by",
+          "roomID": 1127
+        },
+        {
+          "regionName": "7F Hallway 1122",
+          "x": 62.0640749132362,
+          "y": 47.80883974327216,
+          "startTime": 30,
+          "endTime": 30,
+          "event": "pass-by",
+          "roomID": 1122
+        },
+        {
+          "regionName": "7F Hallway 1127",
+          "x": 58.89710236698598,
+          "y": 64.27857486662086,
+          "startTime": 35,
+          "endTime": 55,
+          "event": "pass-by",
+          "roomID": 1127
+        },
+        {
+          "regionName": "7F Hallway 1123",
+          "x": 60.14238574740125,
+          "y": 82.58084408411493,
+          "startTime": 60,
+          "endTime": 80,
+          "event": "pass-by",
+          "roomID": 1123
+        },
+        {
+          "regionName": "7F Room 1062",
+          "x": 50.914119708389535,
+          "y": 92.665607516666,
+          "startTime": 85,
+          "endTime": 90,
+          "event": "pass-by",
+          "roomID": 1062
+        },
+        {
+          "regionName": "7F Hallway 1110",
+          "x": 49.45051897777721,
+          "y": 97.40356032298192,
+          "startTime": 95,
+          "endTime": 95,
+          "event": "pass-by",
+          "roomID": 1110
+        },
+        {
+          "regionName": "7F Room 1050",
+          "x": 50.485261157243684,
+          "y": 103.24789270299345,
+          "startTime": 100,
+          "endTime": 850,
+          "event": "stay",
+          "roomID": 1050
+        }
+      ],
+      "floor": 7
+    },
+    {
+      "data": [
+        {
+          "regionName": "6F Staircase 976",
+          "x": 57.0839428495572,
+          "y": 109.68583554070008,
+          "startTime": 855,
+          "endTime": 855,
+          "event": "pass-by",
+          "roomID": 976
+        }
+      ],
+      "floor": 6
+    },
+    {
+      "data": [
+        {
+          "regionName": "5F Staircase 835",
+          "x": 61.40442015777245,
+          "y": 107.70313216492653,
+          "startTime": 860,
+          "endTime": 865,
+          "event": "pass-by",
+          "roomID": 835
+        }
+      ],
+      "floor": 5
+    },
+    {
+      "data": [
+        {
+          "regionName": "4F Staircase 694",
+          "x": 59.16723032679835,
+          "y": 104.2779044998741,
+          "startTime": 870,
+          "endTime": 885,
+          "event": "pass-by",
+          "roomID": 694
+        },
+        {
+          "regionName": "4F Hallway 701",
+          "x": 63.73566218546248,
+          "y": 99.01854334985623,
+          "startTime": 890,
+          "endTime": 890,
+          "event": "pass-by",
+          "roomID": 701
+        },
+        {
+          "regionName": "4F Hallway 688",
+          "x": 66.18671553054087,
+          "y": 98.4949428381625,
+          "startTime": 895,
+          "endTime": 895,
+          "event": "pass-by",
+          "roomID": 688
+        },
+        {
+          "regionName": "4F Room 640",
+          "x": 70.99023959818838,
+          "y": 92.55760745417396,
+          "startTime": 900,
+          "endTime": 905,
+          "event": "pass-by",
+          "roomID": 640
+        },
+        {
+          "regionName": "4F Room 637",
+          "x": 75.03099441524458,
+          "y": 90.554434781166,
+          "startTime": 910,
+          "endTime": 920,
+          "event": "pass-by",
+          "roomID": 637
+        },
+        {
+          "regionName": "4F Hallway 691",
+          "x": 74.29789600268371,
+          "y": 80.84099243468457,
+          "startTime": 925,
+          "endTime": 940,
+          "event": "pass-by",
+          "roomID": 691
+        },
+        {
+          "regionName": "4F Room 670",
+          "x": 72.91630060681831,
+          "y": 69.93744074889335,
+          "startTime": 945,
+          "endTime": 955,
+          "event": "pass-by",
+          "roomID": 670
+        },
+        {
+          "regionName": "4F Room 673",
+          "x": 77.12357963188843,
+          "y": 66.56585555213526,
+          "startTime": 960,
+          "endTime": 960,
+          "event": "pass-by",
+          "roomID": 673
+        },
+        {
+          "regionName": "4F Hallway 702",
+          "x": 74.13994731823789,
+          "y": 58.25163687503511,
+          "startTime": 965,
+          "endTime": 970,
+          "event": "pass-by",
+          "roomID": 702
+        },
+        {
+          "regionName": "4F Room 671",
+          "x": 72.06762439015826,
+          "y": 55.464773286687205,
+          "startTime": 975,
+          "endTime": 975,
+          "event": "pass-by",
+          "roomID": 671
+        },
+        {
+          "regionName": "4F Hallway 704",
+          "x": 65.65019060084772,
+          "y": 53.62693290807756,
+          "startTime": 980,
+          "endTime": 995,
+          "event": "pass-by",
+          "roomID": 704
+        },
+        {
+          "regionName": "4F Hallway 699",
+          "x": 59.42176773460245,
+          "y": 36.796621296060216,
+          "startTime": 1000,
+          "endTime": 1025,
+          "event": "pass-by",
+          "roomID": 699
+        },
+        {
+          "regionName": "4F Staircase 693",
+          "x": 60.85444163337944,
+          "y": 19.206986282361456,
+          "startTime": 1030,
+          "endTime": 1035,
+          "event": "pass-by",
+          "roomID": 693
+        },
+        {
+          "regionName": "4F Hallway 698",
+          "x": 58.46670187169324,
+          "y": 20.717324303722247,
+          "startTime": 1040,
+          "endTime": 1040,
+          "event": "pass-by",
+          "roomID": 698
+        },
+        {
+          "regionName": "4F Staircase 693",
+          "x": 58.41691583864804,
+          "y": 13.028932979181487,
+          "startTime": 1045,
+          "endTime": 1065,
+          "event": "pass-by",
+          "roomID": 693
+        }
+      ],
+      "floor": 4
+    },
+    {
+      "data": [
+        {
+          "regionName": "3F Staircase 552",
+          "x": 62.969049302992794,
+          "y": 12.99259024969982,
+          "startTime": 1070,
+          "endTime": 1070,
+          "event": "pass-by",
+          "roomID": 552
+        }
+      ],
+      "floor": 3
+    },
+    {
+      "data": [
+        {
+          "regionName": "2F Staircase 411",
+          "x": 60.150677806801575,
+          "y": 13.677070173142944,
+          "startTime": 1075,
+          "endTime": 1085,
+          "event": "pass-by",
+          "roomID": 411
+        },
+        {
+          "regionName": "2F Hallway 416",
+          "x": 57.96916600971216,
+          "y": 23.035380033284053,
+          "startTime": 1090,
+          "endTime": 1100,
+          "event": "pass-by",
+          "roomID": 416
+        },
+        {
+          "regionName": "2F Room 292",
+          "x": 51.96416459983471,
+          "y": 19.5428700817701,
+          "startTime": 1105,
+          "endTime": 1105,
+          "event": "pass-by",
+          "roomID": 292
+        },
+        {
+          "regionName": "2F Room 296",
+          "x": 51.29960664529046,
+          "y": 24.294818477291845,
+          "startTime": 1110,
+          "endTime": 1110,
+          "event": "pass-by",
+          "roomID": 296
+        },
+        {
+          "regionName": "2F Room 291",
+          "x": 42.66592638291599,
+          "y": 13.447093979186409,
+          "startTime": 1115,
+          "endTime": 2605,
+          "event": "stay",
+          "roomID": 291
+        },
+        {
+          "regionName": "2F Room 295",
+          "x": 43.46430475589856,
+          "y": 29.955007892417143,
+          "startTime": 2610,
+          "endTime": 2620,
+          "event": "pass-by",
+          "roomID": 295
+        },
+        {
+          "regionName": "2F Hallway 313",
+          "x": 43.28216477298536,
+          "y": 40.189783454245514,
+          "startTime": 2625,
+          "endTime": 2640,
+          "event": "pass-by",
+          "roomID": 313
+        },
+        {
+          "regionName": "2F Room 306",
+          "x": 44.09237956153603,
+          "y": 50.28473334378267,
+          "startTime": 2645,
+          "endTime": 2655,
+          "event": "pass-by",
+          "roomID": 306
+        },
+        {
+          "regionName": "2F Hallway 415",
+          "x": 45.242451550439995,
+          "y": 56.95785999874222,
+          "startTime": 2660,
+          "endTime": 2675,
+          "event": "pass-by",
+          "roomID": 415
+        },
+        {
+          "regionName": "2F Hallway 422",
+          "x": 55.71355841911511,
+          "y": 66.02604322778915,
+          "startTime": 2680,
+          "endTime": 2700,
+          "event": "pass-by",
+          "roomID": 422
+        },
+        {
+          "regionName": "2F Hallway 418",
+          "x": 62.39914568521878,
+          "y": 84.96762661588907,
+          "startTime": 2705,
+          "endTime": 2730,
+          "event": "pass-by",
+          "roomID": 418
+        },
+        {
+          "regionName": "2F Room 358",
+          "x": 68.46675309923008,
+          "y": 94.04623558763045,
+          "startTime": 2735,
+          "endTime": 2735,
+          "event": "pass-by",
+          "roomID": 358
+        },
+        {
+          "regionName": "2F Room 346",
+          "x": 67.96723782229098,
+          "y": 102.11356071665732,
+          "startTime": 2740,
+          "endTime": 2745,
+          "event": "pass-by",
+          "roomID": 346
+        },
+        {
+          "regionName": "2F Hallway 406",
+          "x": 76.95153560716898,
+          "y": 97.93659510718317,
+          "startTime": 2750,
+          "endTime": 2760,
+          "event": "pass-by",
+          "roomID": 406
+        },
+        {
+          "regionName": "2F Room 352",
+          "x": 86.40719653620086,
+          "y": 94.90676365732376,
+          "startTime": 2765,
+          "endTime": 2765,
+          "event": "pass-by",
+          "roomID": 352
+        },
+        {
+          "regionName": "2F Hallway 403",
+          "x": 81.13435419778187,
+          "y": 96.95342736307474,
+          "startTime": 2770,
+          "endTime": 2770,
+          "event": "pass-by",
+          "roomID": 403
+        },
+        {
+          "regionName": "2F Room 352",
+          "x": 85.58890321546457,
+          "y": 95.24058194940508,
+          "startTime": 2775,
+          "endTime": 2780,
+          "event": "pass-by",
+          "roomID": 352
+        },
+        {
+          "regionName": "2F Room 349",
+          "x": 90.20388068252831,
+          "y": 92.12335398300259,
+          "startTime": 2785,
+          "endTime": 2790,
+          "event": "pass-by",
+          "roomID": 349
+        },
+        {
+          "regionName": "2F Room 349",
+          "x": 92.17781246536661,
+          "y": 91.35956785193135,
+          "startTime": 2795,
+          "endTime": 3275,
+          "event": "stay",
+          "roomID": 349
+        },
+        {
+          "regionName": "2F Room 352",
+          "x": 81.24156493783804,
+          "y": 88.60930544019814,
+          "startTime": 3280,
+          "endTime": 3280,
+          "event": "pass-by",
+          "roomID": 352
+        },
+        {
+          "regionName": "2F Hallway 409",
+          "x": 75.70992854660672,
+          "y": 83.41954545627202,
+          "startTime": 3285,
+          "endTime": 3300,
+          "event": "pass-by",
+          "roomID": 409
+        },
+        {
+          "regionName": "2F Hallway 373",
+          "x": 70.56195241324991,
+          "y": 79.54700241065413,
+          "startTime": 3305,
+          "endTime": 3305,
+          "event": "pass-by",
+          "roomID": 373
+        },
+        {
+          "regionName": "2F Hallway 418",
+          "x": 59.91718254860562,
+          "y": 83.25312523671428,
+          "startTime": 3310,
+          "endTime": 3340,
+          "event": "pass-by",
+          "roomID": 418
+        },
+        {
+          "regionName": "2F Hallway 373",
+          "x": 65.25270126564055,
+          "y": 78.9227407916459,
+          "startTime": 3345,
+          "endTime": 3345,
+          "event": "pass-by",
+          "roomID": 373
+        },
+        {
+          "regionName": "2F Hallway 418",
+          "x": 60.91193735122144,
+          "y": 77.01251602973822,
+          "startTime": 3350,
+          "endTime": 3350,
+          "event": "pass-by",
+          "roomID": 418
+        },
+        {
+          "regionName": "2F Room 376",
+          "x": 69.86430869896286,
+          "y": 74.47895593932347,
+          "startTime": 3355,
+          "endTime": 4180,
+          "event": "stay",
+          "roomID": 376
+        },
+        {
+          "regionName": "2F Hallway 385",
+          "x": 78.95179965329628,
+          "y": 64.6795275360209,
+          "startTime": 4185,
+          "endTime": 4185,
+          "event": "pass-by",
+          "roomID": 385
+        },
+        {
+          "regionName": "2F Hallway 420",
+          "x": 88.20673939649662,
+          "y": 59.463735858543444,
+          "startTime": 4190,
+          "endTime": 4205,
+          "event": "pass-by",
+          "roomID": 420
+        },
+        {
+          "regionName": "2F Room 365",
+          "x": 94.14872541493484,
+          "y": 50.22496813958226,
+          "startTime": 4210,
+          "endTime": 4215,
+          "event": "pass-by",
+          "roomID": 365
+        },
+        {
+          "regionName": "2F Room 362",
+          "x": 94.95582486794983,
+          "y": 45.15561096335904,
+          "startTime": 4220,
+          "endTime": 4220,
+          "event": "pass-by",
+          "roomID": 362
+        },
+        {
+          "regionName": "2F Room 326",
+          "x": 100.74722097633332,
+          "y": 43.808253230609175,
+          "startTime": 4225,
+          "endTime": 4225,
+          "event": "pass-by",
+          "roomID": 326
+        },
+        {
+          "regionName": "2F Hallway 398",
+          "x": 98.4154351894193,
+          "y": 41.5742472541857,
+          "startTime": 4230,
+          "endTime": 4230,
+          "event": "pass-by",
+          "roomID": 398
+        },
+        {
+          "regionName": "2F Room 362",
+          "x": 95.08851014547771,
+          "y": 40.64202411104095,
+          "startTime": 4235,
+          "endTime": 4235,
+          "event": "pass-by",
+          "roomID": 362
+        },
+        {
+          "regionName": "2F Hallway 395",
+          "x": 98.93347509227922,
+          "y": 38.11983349820248,
+          "startTime": 4240,
+          "endTime": 4240,
+          "event": "pass-by",
+          "roomID": 395
+        },
+        {
+          "regionName": "2F Room 359",
+          "x": 92.79642082253156,
+          "y": 36.92994181636981,
+          "startTime": 4245,
+          "endTime": 4245,
+          "event": "pass-by",
+          "roomID": 359
+        },
+        {
+          "regionName": "2F Hallway 407",
+          "x": 82.74286133115757,
+          "y": 34.22735147216748,
+          "startTime": 4250,
+          "endTime": 4270,
+          "event": "pass-by",
+          "roomID": 407
+        },
+        {
+          "regionName": "2F Room 353",
+          "x": 75.27872418549728,
+          "y": 29.506596648568554,
+          "startTime": 4275,
+          "endTime": 4280,
+          "event": "pass-by",
+          "roomID": 353
+        },
+        {
+          "regionName": "2F Room 356",
+          "x": 67.94108790667138,
+          "y": 26.004434100699747,
+          "startTime": 4285,
+          "endTime": 4300,
+          "event": "pass-by",
+          "roomID": 356
+        },
+        {
+          "regionName": "2F Hallway 417",
+          "x": 61.52556999280485,
+          "y": 24.076582181010423,
+          "startTime": 4305,
+          "endTime": 4305,
+          "event": "pass-by",
+          "roomID": 417
+        },
+        {
+          "regionName": "2F Hallway 416",
+          "x": 59.50156048122563,
+          "y": 20.963574860160374,
+          "startTime": 4310,
+          "endTime": 4310,
+          "event": "pass-by",
+          "roomID": 416
+        },
+        {
+          "regionName": "2F Staircase 411",
+          "x": 58.251036913762185,
+          "y": 17.497308148912857,
+          "startTime": 4315,
+          "endTime": 4320,
+          "event": "pass-by",
+          "roomID": 411
+        }
+      ],
+      "floor": 2
+    },
+    {
+      "data": [
+        {
+          "regionName": "3F Staircase 552",
+          "x": 60.41851091569332,
+          "y": 12.804768066862568,
+          "startTime": 4325,
+          "endTime": 4325,
+          "event": "pass-by",
+          "roomID": 552
+        }
+      ],
+      "floor": 3
+    },
+    {
+      "data": [
+        {
+          "regionName": "2F Staircase 411",
+          "x": 58.352015173726386,
+          "y": 11.824136740199132,
+          "startTime": 4330,
+          "endTime": 4335,
+          "event": "pass-by",
+          "roomID": 411
+        }
+      ],
+      "floor": 2
+    },
+    {
+      "data": [
+        {
+          "regionName": "3F Staircase 552",
+          "x": 59.57108886730538,
+          "y": 16.11024062526029,
+          "startTime": 4340,
+          "endTime": 4355,
+          "event": "pass-by",
+          "roomID": 552
+        },
+        {
+          "regionName": "3F Hallway 558",
+          "x": 56.69579117927789,
+          "y": 24.633151421113954,
+          "startTime": 4360,
+          "endTime": 4360,
+          "event": "pass-by",
+          "roomID": 558
+        },
+        {
+          "regionName": "3F Room 438",
+          "x": 27.89392566221582,
+          "y": 35.40521924159446,
+          "startTime": 4365,
+          "endTime": 5090,
+          "event": "stay",
+          "roomID": 438
+        }
+      ],
+      "floor": 3
+    }
+  ]
+}
