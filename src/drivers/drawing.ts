@@ -3,8 +3,22 @@ import * as R from 'ramda'
 import dropRepeats from 'xstream/extra/dropRepeats'
 import sampleCombine from 'xstream/extra/sampleCombine'
 import xs, { Stream } from 'xstream'
-import { Floor, RawTrace, RawTracePoint, TimeRange, TracePoint } from '../interfaces'
-import { getColor, getRawTracePoints } from '../utils'
+import {
+  Floor,
+  RawTrace,
+  RawTracePoint,
+  TimeRange,
+  TracePoint,
+  SemanticTrace,
+  SVGSelection,
+} from '../interfaces'
+import {
+  getColor,
+  getRawTracePoints,
+  getPlainTraceLayerName,
+  getPlainPointsLayerName,
+  accumulate,
+} from '../utils'
 import { MAX_SCALE, MIN_SCALE, plainTraceNameList } from '../constants'
 import { State as LegendState } from '../Legend'
 
@@ -180,6 +194,60 @@ export function drawPlainTracePoints(
   join.exit().remove()
 }
 
+function pointRadius(pointType: string) {
+  if (pointType === 'raw') {
+    return 0.75
+  } else if (pointType === 'pass-by') {
+    return 1.25
+  } else if (pointType === 'stay') {
+    return 2
+  } else {
+    return 1
+  }
+}
+
+export function drawSemanticPoints(
+  layer: SVGSelection,
+  traces: SemanticTrace[],
+  sIndex: number,
+  onClick: (d: { sIndex: number }) => void,
+) {
+  const startIndexes = accumulate((acc, tr) => acc + tr.data.length, traces, 0)
+  const pointGroupsJoin = layer
+    .selectAll('.track-points')
+    .data(traces.map((trace, traceIndex) => ({ trace, traceIndex })))
+  const pointGroups = pointGroupsJoin
+    .enter()
+    .append('g')
+    .classed('track-points', true)
+    .attr('data-trace-index', (d, i) => String(i))
+    .merge(pointGroupsJoin)
+  pointGroupsJoin.exit().remove()
+
+  const trackPointOpacity = (d: { sIndex: number }) => (d.sIndex === sIndex ? 0.8 : 0.2)
+
+  const symbolsJoin = pointGroups
+    .selectAll('.symbol')
+    .data(({ trace, traceIndex }) =>
+      trace.data.map((p, i) => ({ sIndex: startIndexes[traceIndex] + i, p })),
+    )
+  symbolsJoin
+    .enter()
+    .append('rect')
+    .classed('symbol', true)
+    .style('transition', 'opacity 250ms')
+    .attr('fill', getColor('semantic'))
+    .on('click', onClick)
+    .style('cursor', 'pointer')
+    .attr('x', ({ p }) => p.x - pointRadius('stay'))
+    .attr('y', ({ p }) => p.y - pointRadius('stay'))
+    .attr('width', 2 * pointRadius('stay'))
+    .attr('height', 2 * pointRadius('stay'))
+    .merge(symbolsJoin)
+    .attr('opacity', trackPointOpacity)
+  symbolsJoin.exit().remove()
+}
+
 const lineGenerator = d3
   .line<RawTracePoint>()
   .x(item => item.x)
@@ -201,4 +269,12 @@ export function drawPlaintracePaths(
     .attr('d', trace => lineGenerator(trace.data))
     .attr('opacity', 0.8)
   join.exit().remove()
+}
+
+export function getPlainPathWrapper(svg: SVGSelection, traceName: string) {
+  return svg.select(`*[data-layer=${getPlainTraceLayerName(traceName)}]`) as SVGSelection
+}
+
+export function getPlainPointsWrapper(svg: SVGSelection, traceName: string) {
+  return svg.select(`*[data-layer=${getPlainPointsLayerName(traceName)}]`) as SVGSelection
 }

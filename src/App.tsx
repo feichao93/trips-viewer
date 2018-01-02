@@ -1,53 +1,51 @@
-import * as R from 'ramda'
-import floors from '../res/floors'
+import { DOMSource } from '@cycle/dom'
 import isolate from '@cycle/isolate'
+import * as R from 'ramda'
+import { VNode } from 'snabbdom/vnode'
+import xs, { Stream } from 'xstream'
 import pairwise from 'xstream/extra/pairwise'
 import sampleCombine from 'xstream/extra/sampleCombine'
+import { plainTraceNameList } from './constants'
+import { ShortcutSource } from './drivers/makeShortcutDriver'
+import { DataSource, Floor, SemanticTrace, Thunk, TimeRange } from './interfaces'
+import { State as LegendState } from './Legend'
 import Sidebar, { FloorStats } from './Sidebar'
 import TimelinePanel from './TimelinePanel'
-import xs, { Stream } from 'xstream'
-import { DataSource, Floor, Thunk, TimeRange } from './interfaces'
-import { DOMSource } from '@cycle/dom'
+import floors from '../res/floors'
 import {
   getSemanticTracePoints,
   Mutation,
   getPlainPointsLayerName,
   getPlainTraceLayerName,
+  getTrace,
 } from './utils'
-import { State as LegendState } from './Legend'
-import { VNode } from 'snabbdom/vnode'
-import { plainTraceNameList } from './constants'
-import { ShortcutSource } from './drivers/makeShortcutDriver'
 
-export interface DrawingSource {
-  selection: d3.Selection<SVGSVGElement, null, null, null>
-  zoom: d3.ZoomBehavior<SVGSVGElement, null>
-}
+export type DrawingSource = Stream<{
+  nextSIndex: number
+}>
 
-export interface DrawingSink {
+export type DrawingSink = Stream<{
   floor: Floor
   dataSource: DataSource
   legendState: LegendState
   timeRange: TimeRange
   sIndex: number
-  centralize: boolean
-}
+  traceToCentralize: SemanticTrace
+}>
 
 export interface Sources {
   DOM: DOMSource
-  drawing: Stream<DrawingSource>
+  drawing: DrawingSource
   file: Stream<DataSource>
   shortcut: ShortcutSource
 }
 
 export interface Sinks {
   DOM: Stream<VNode>
-  drawing: Stream<DrawingSink>
+  drawing: DrawingSink
   thunk: Stream<Thunk>
   file: Stream<File>
 }
-
-export interface State {}
 
 const svgMarkup = (
   <div>
@@ -59,6 +57,7 @@ const svgMarkup = (
         <g data-layer="point" />
         {plainTraceNameList.map(name => <g data-layer={getPlainTraceLayerName(name)} />)}
         {plainTraceNameList.map(name => <g data-layer={getPlainPointsLayerName(name)} />)}
+        <g data-layer="semantic-points" />
       </g>
     </svg>
   </div>
@@ -79,13 +78,14 @@ function calcualteFloorStats(dataSource: DataSource): FloorStats {
 
 export default function App(sources: Sources): Sinks {
   const domSource = sources.DOM
-  const dataSource$ = sources.file.startWith(require('../res/track.json'))
+  const initDataSource: DataSource = require('../res/track.json')
+  const dataSource$ = sources.file.startWith(initDataSource)
   const floorStats$ = dataSource$.map(calcualteFloorStats)
 
-  const initFloorId = 0
-  const changeFloorId$ = xs.create<Mutation<number>>()
-  const floorId$: Stream<number> = changeFloorId$.fold((floorId, f) => f(floorId), initFloorId)
-  const sidebar = (isolate(Sidebar) as typeof Sidebar)({
+  const initFloorId = initDataSource.semanticTraces[0].floor
+  const changeFloorIdProxy$ = xs.create<Mutation<number>>()
+  const floorId$: Stream<number> = changeFloorIdProxy$.fold((floorId, f) => f(floorId), initFloorId)
+  const sidebar = Sidebar({
     DOM: domSource,
     floorStats: floorStats$,
     floorId: floorId$,
@@ -100,8 +100,8 @@ export default function App(sources: Sources): Sinks {
   const svgLoad$ = domSource.select('svg.map').events('load')
   const floor$ = svgLoad$.mapTo(floorData$).flatten()
 
-  const changeSIndex = xs.create<Mutation<number>>()
-  const sIndex$ = changeSIndex.fold((sIndex, f) => f(sIndex), 0)
+  const nextSIndexProxy$ = xs.create<number>()
+  const sIndex$ = nextSIndexProxy$.startWith(0)
   const timeRange$ = xs.combine(dataSource$, sIndex$).map(([dataSource, sIndex]) => {
     const points = getSemanticTracePoints(dataSource.semanticTraces)
     const p = points[sIndex]
@@ -111,16 +111,6 @@ export default function App(sources: Sources): Sinks {
       return { start: p.startTime, end: p.endTime }
     }
   })
-  const changeFloorIdAccordingToSIndex$ = xs
-    .combine(dataSource$, sIndex$)
-    .map(getFloor)
-    .compose(sampleCombine(floorId$))
-    .filter(([next, cnt]) => cnt !== next)
-    .map(([next, cnt]) => next)
-    .map(R.always)
-
-  // changeFloorIdAccordingToSIndex$.map() // TODO centralize the trace
-  changeFloorId$.imitate(xs.merge(sidebar.changeFloorId, changeFloorIdAccordingToSIndex$))
 
   const timelinePanel = TimelinePanel({
     DOM: domSource,
@@ -128,7 +118,24 @@ export default function App(sources: Sources): Sinks {
     semanticTraces: dataSource$.map(d => d.semanticTraces),
     shortcut: sources.shortcut,
   })
-  changeSIndex.imitate(timelinePanel.changeSIndex)
+  nextSIndexProxy$.imitate(
+    xs.merge(timelinePanel.nextSIndex, sources.drawing.map(d => d.nextSIndex)),
+  )
+
+  const nextTraceInAnotherFloor$ = timelinePanel.nextSIndex
+    .compose(sampleCombine(dataSource$))
+    .map(getTrace)
+    .compose(sampleCombine(floorId$))
+    .filter(([nextTrace, cnt]) => cnt !== nextTrace.floor)
+    .map(([nextTrace, cnt]) => nextTrace)
+    .startWith(null)
+
+  changeFloorIdProxy$.imitate(
+    xs.merge(
+      nextTraceInAnotherFloor$.filter(R.identity).map(tr => R.always(tr.floor)),
+      sidebar.changeFloorId,
+    ),
+  )
 
   const vdom$ = xs.combine(sidebar.DOM, timelinePanel.DOM).map(([sidebar, timelinePanel]) => (
     <div>
@@ -138,36 +145,26 @@ export default function App(sources: Sources): Sinks {
     </div>
   ))
 
-  const centralize$ = changeFloorIdAccordingToSIndex$
-    .map(s => xs.of(true, false))
-    .flatten()
-    .startWith(false)
-
   return {
     DOM: vdom$,
     drawing: xs
-      .combine(floor$, dataSource$, sidebar.legendState, timeRange$, sIndex$, centralize$)
-      .map(([floor, dataSource, legendState, timeRange, sIndex, centralize]) => ({
+      .combine(
+        floor$,
+        dataSource$,
+        sidebar.legendState,
+        timeRange$,
+        sIndex$,
+        nextTraceInAnotherFloor$,
+      )
+      .map(([floor, dataSource, legendState, timeRange, sIndex, traceToCentralize]) => ({
         floor,
         dataSource,
         legendState,
         timeRange,
         sIndex,
-        centralize,
+        traceToCentralize,
       })),
     thunk: sidebar.thunk,
     file: sidebar.file,
   }
-}
-
-function getFloor([{ semanticTraces: traces }, sIndex]: [DataSource, number]) {
-  let t = 0
-  for (let i = 0; i < traces.length; i++) {
-    const trace = traces[i]
-    t += trace.data.length
-    if (t > sIndex) {
-      return trace.floor
-    }
-  }
-  throw new Error(`Invalid sIndex ${sIndex}`)
 }

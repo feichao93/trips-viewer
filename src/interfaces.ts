@@ -99,3 +99,5 @@ export interface TimeRange {
   start: number
   end: number
 }
+
+export type SVGSelection = d3.Selection<SVGElement, null, null, null>

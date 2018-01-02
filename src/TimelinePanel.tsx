@@ -16,7 +16,7 @@ export interface Sources {
   shortcut: ShortcutSource
 }
 export interface Sinks {
-  changeSIndex: Stream<Mutation<number>>
+  nextSIndex: Stream<number>
   DOM: Stream<VNode>
 }
 
@@ -42,18 +42,17 @@ export default function TimelinePanel(sources: Sources): Sinks {
 
   const gap = 10
 
-  const clicktoChangeSIndex$ = domSource
+  const clickToNextSIndex$ = domSource
     .select('.list .item')
     .events('click')
     .map(e => Number((e.currentTarget as HTMLElement).dataset.sIndex))
-    .map(R.always)
 
   const navigate$ = xs.merge(
     sources.shortcut.shortcut(['s', 'down'], 'next'),
     sources.shortcut.shortcut(['w', 'up'], 'prev'),
   )
 
-  const navigateToChangeSIndex$ = navigate$
+  const navigateToNextSIndex$ = navigate$
     .compose(sampleCombine(sIndex$, points$))
     .map(([navigate, sIndex, points]) => {
       if (navigate === 'next') {
@@ -62,8 +61,6 @@ export default function TimelinePanel(sources: Sources): Sinks {
         return Math.max(sIndex - 1, 0)
       }
     })
-    .debug('sampleCombine')
-    .map(R.always)
 
   const vdom$ = xs.combine(points$, sIndex$).map(([points, sIndex]) => (
     <div className="timeline-panel">
@@ -131,6 +128,6 @@ export default function TimelinePanel(sources: Sources): Sinks {
 
   return {
     DOM: vdom$,
-    changeSIndex: xs.merge(clicktoChangeSIndex$, navigateToChangeSIndex$),
+    nextSIndex: xs.merge(clickToNextSIndex$, navigateToNextSIndex$),
   }
 }

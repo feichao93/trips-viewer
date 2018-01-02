@@ -1,11 +1,11 @@
 import * as d3 from 'd3'
 import * as R from 'ramda'
+import xs, { Stream } from 'xstream'
 import dropRepeats from 'xstream/extra/dropRepeats'
 import sampleCombine from 'xstream/extra/sampleCombine'
-import xs, { Stream } from 'xstream'
-import { DataSource, Floor, RawTrace, RawTracePoint, TracePoint } from '../interfaces'
 import { DrawingSink, DrawingSource } from '../App'
 import { MAX_SCALE, MIN_SCALE, plainTraceNameList } from '../constants'
+import { DataSource, Floor, RawTrace, RawTracePoint, TracePoint, SVGSelection } from '../interfaces'
 import {
   drawFloor,
   drawPlainTracePoints,
@@ -13,6 +13,9 @@ import {
   getVisiblePlainPoints,
   getVisiblePlainTraces,
   drawPlaintracePaths,
+  getPlainPathWrapper,
+  getPlainPointsWrapper,
+  drawSemanticPoints,
 } from './drawing'
 import {
   getColor,
@@ -28,15 +31,18 @@ export default function makeDrawingDriver() {
   zoom.scaleExtent([MIN_SCALE, MAX_SCALE])
   const transform$ = getTransformStream(zoom)
 
-  return function drawingDriver(drawingSink$: Stream<DrawingSink>): Stream<DrawingSource> {
-    const floor$ = drawingSink$.map(sink => sink.floor).compose(dropRepeats())
-    const floorId$ = floor$.map(flr => flr.floorId)
-    const legendState$ = drawingSink$.map(sink => sink.legendState)
-    const timeRange$ = drawingSink$.map(sink => sink.timeRange).compose(dropRepeats())
-    // const centralize$ = drawingSink$.map(sink => sink.centralize)
+  return function drawingDriver(drawingSink: DrawingSink): DrawingSource {
+    const floor$ = drawingSink.map(sink => sink.floor).compose(dropRepeats())
+    const legendState$ = drawingSink.map(sink => sink.legendState).compose(dropRepeats())
+    const timeRange$ = drawingSink.map(sink => sink.timeRange).compose(dropRepeats())
+    const dataSource$ = drawingSink.map(sink => sink.dataSource).compose(dropRepeats())
+    const sIndex$ = drawingSink.map(sink => sink.sIndex).compose(dropRepeats())
+    const traceToCentralize$ = drawingSink
+      .map(sink => sink.traceToCentralize)
+      .compose(dropRepeats())
 
-    const dataSource$ = drawingSink$.map(sink => sink.dataSource).compose(dropRepeats())
-    // .debug('data-source')
+    const floorId$ = floor$.map(flr => flr.floorId)
+
     const plainTraces$ = {
       groundTruth: dataSource$.map(source => source.groundTruthTraces),
       raw: dataSource$.map(source => source.rawTraces),
@@ -56,9 +62,6 @@ export default function makeDrawingDriver() {
       next(floor) {
         drawFloor(floor, resetTransform, { zoom })
         resetTransform = false
-      },
-      error(e) {
-        console.error(e)
       },
     })
 
@@ -85,25 +88,6 @@ export default function makeDrawingDriver() {
     // })
 
     const visiblePlainTraces$ = getVisiblePlainTraces(plainTraces$, legendState$, floorId$)
-
-    for (const traceName of plainTraceNameList) {
-      const traces$ = visiblePlainTraces$[traceName]
-      const wrapper$ = svg$.map(
-        svg =>
-          svg.select(`*[data-layer=${getPlainTraceLayerName(traceName)}]`) as d3.Selection<
-            SVGElement,
-            null,
-            null,
-            null
-          >,
-      )
-      xs.combine(wrapper$, traces$).addListener({
-        next([wrapper, traces]) {
-          drawPlaintracePaths(wrapper, traces, getColor(traceName))
-        },
-      })
-    }
-
     const visiblePlainPoints$ = getVisiblePlainPoints(
       plainTraces$,
       legendState$,
@@ -112,26 +96,50 @@ export default function makeDrawingDriver() {
     )
 
     for (const traceName of plainTraceNameList) {
+      const traces$ = visiblePlainTraces$[traceName]
+      const pathWrapper$ = svg$.map(svg => getPlainPathWrapper(svg, traceName))
+      xs.combine(pathWrapper$, traces$).addListener({
+        next([wrapper, traces]) {
+          drawPlaintracePaths(wrapper, traces, getColor(traceName))
+        },
+      })
+
       const points$ = visiblePlainPoints$[traceName]
-      const wrapper$ = svg$.map(
-        svg =>
-          svg.select(`*[data-layer=${getPlainPointsLayerName(traceName)}]`) as d3.Selection<
-            SVGElement,
-            null,
-            null,
-            null
-          >,
-      )
-      xs.combine(wrapper$, points$).addListener({
+      const pointsWrapper$ = svg$.map(svg => getPlainPointsWrapper(svg, traceName))
+      xs.combine(pointsWrapper$, points$).addListener({
         next([svg, points]) {
           drawPlainTracePoints(svg, points, getColor(traceName))
         },
       })
     }
 
-    return xs.combine(xs.of(zoom), svg$, transform$).map(([zoom, svg, transform]) => ({
-      selection: svg,
-      zoom,
+    const semanticTraces$ = dataSource$.map(source => source.semanticTraces)
+    const visibleSemanticTraces$ = xs
+      .combine(semanticTraces$, floorId$, legendState$)
+      .map(([semanticTraces, floorId, visibility]) => {
+        if (visibility.semantic) {
+          return semanticTraces.filter(tr => tr.floor === floorId)
+        } else {
+          return []
+        }
+      })
+
+    const nextSIndex$ = xs.create<number>({
+      start(listener) {
+        xs.combine(svg$, visibleSemanticTraces$, sIndex$).addListener({
+          next([svg, traces, sIndex]) {
+            const layer = svg.select('*[data-layer=semantic-points]') as SVGSelection
+            drawSemanticPoints(layer, traces, sIndex, (d: { sIndex: number }) =>
+              listener.next(d.sIndex),
+            )
+          },
+        })
+      },
+      stop() {},
+    })
+
+    return xs.combine(nextSIndex$).map(([nextSIndex]) => ({
+      nextSIndex,
     }))
   }
 }

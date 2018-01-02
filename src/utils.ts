@@ -1,6 +1,6 @@
-import xs, { Stream } from 'xstream'
 import * as d3 from 'd3'
-import { RawTrace, RawTracePoint, SemanticTrace, TracePoint } from './interfaces'
+import xs, { Stream } from 'xstream'
+import { DataSource, RawTrace, RawTracePoint, SemanticTrace, TracePoint } from './interfaces'
 
 export function foldFn<S>(state: S, f: Mutation<S>): S {
   return f(state)
@@ -65,6 +65,28 @@ export function formatTime(t: number) {
 export function getPlainPointsLayerName(name: string) {
   return `plain-points-${name}`
 }
+
 export function getPlainTraceLayerName(name: string) {
   return `plain-trace-${name}`
+}
+
+export function getTrace([sIndex, { semanticTraces: traces }]: [number, DataSource]) {
+  let t = 0
+  for (let i = 0; i < traces.length; i++) {
+    const trace = traces[i]
+    t += trace.data.length
+    if (t > sIndex) {
+      return trace
+    }
+  }
+  throw new Error(`Invalid sIndex ${sIndex}`)
+}
+
+export function accumulate<A, B>(fn: (acc: B, a: A) => B, array: A[], init: B): B[] {
+  let last = init
+  const result: B[] = [init]
+  for (const v of array) {
+    result.push((last = fn(last, v)))
+  }
+  return result
 }
