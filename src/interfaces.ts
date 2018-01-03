@@ -60,6 +60,8 @@ export interface Door {
 }
 
 export interface TracePoint {
+  sIndex: number
+  traceIndex: number
   regionName: string
   x: number
   y: number
@@ -79,6 +81,7 @@ export type RawTrace = {
   floor: string
 }
 export interface SemanticTrace {
+  traceIndex: number
   data: TracePoint[]
   floor: number
 }

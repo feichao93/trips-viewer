@@ -1,14 +1,14 @@
+import { DOMSource } from '@cycle/dom'
+import isolate from '@cycle/isolate'
 import * as d3 from 'd3'
 import * as R from 'ramda'
-import isolate from '@cycle/isolate'
-import { Mutation } from './utils'
-import { DOMSource, legend } from '@cycle/dom'
-import xs, { Stream } from 'xstream'
 import { VNode } from 'snabbdom/vnode'
-import Legend, { State as LegendState } from './Legend'
+import xs, { Stream } from 'xstream'
 import ButtonGroup from './ButtonGroup'
+import { Thunk } from './interfaces'
+import Legend, { State as LegendState } from './Legend'
 import './styles/FloorList.styl'
-import { Thunk, Floor, DataSource } from './interfaces'
+import { Mutation } from './utils'
 
 export type FloorStats = {
   floorId: number
@@ -18,6 +18,7 @@ export type FloorStats = {
 
 export interface Sources {
   DOM: DOMSource
+  nextFilename$: Stream<string>
   floorStats: Stream<FloorStats>
   floorId: Stream<number>
 }
@@ -28,6 +29,7 @@ export interface Sinks {
   thunk: Stream<Thunk>
   file: Stream<File>
   legendState: Stream<LegendState>
+  centralizeMap: Stream<object>
 }
 
 const statsBgColor = d3
@@ -52,9 +54,7 @@ export default function Sidebar(sources: Sources): Sinks {
   const floorStats$ = sources.floorStats
   const floorId$ = sources.floorId
 
-  const initFilename = 'default'
-  const changeFilename$ = xs.create<Mutation<string>>()
-  const filename$ = changeFilename$.fold((filename, f) => f(filename), initFilename)
+  const filename$ = sources.nextFilename$.startWith('default')
 
   const buttonGroup = (isolate(ButtonGroup) as typeof ButtonGroup)({
     DOM: domSource,
@@ -62,8 +62,8 @@ export default function Sidebar(sources: Sources): Sinks {
   })
   const initLegendState: LegendState = {
     groundTruth: true,
-    raw: false,
-    cleanedRaw: false,
+    raw: true,
+    cleanedRaw: true,
     semantic: true,
   }
 
@@ -126,5 +126,6 @@ export default function Sidebar(sources: Sources): Sinks {
     thunk: buttonGroup.thunk,
     file: buttonGroup.file,
     legendState: legendState$,
+    centralizeMap: buttonGroup.centralizeMap,
   }
 }

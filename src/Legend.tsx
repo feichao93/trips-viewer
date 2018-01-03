@@ -1,8 +1,7 @@
-import xs from 'xstream'
+import { Stream } from 'xstream'
 import * as R from 'ramda'
 import { DOMSource, h } from '@cycle/dom'
-import { Mutation, getColor } from './utils'
-import { Stream } from 'xstream'
+import { getColor, Mutation } from './utils'
 import { VNode } from 'snabbdom/vnode'
 import './styles/Legend.styl'
 

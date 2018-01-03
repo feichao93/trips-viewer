@@ -1,30 +1,37 @@
 import * as d3 from 'd3'
 import * as R from 'ramda'
-import xs, { Stream } from 'xstream'
+import xs from 'xstream'
+import debounce from 'xstream/extra/debounce'
 import dropRepeats from 'xstream/extra/dropRepeats'
 import sampleCombine from 'xstream/extra/sampleCombine'
 import { DrawingSink, DrawingSource } from '../App'
 import { MAX_SCALE, MIN_SCALE, plainTraceNameList } from '../constants'
-import { DataSource, Floor, RawTrace, RawTracePoint, TracePoint, SVGSelection } from '../interfaces'
+import { SVGSelection } from '../interfaces'
+import { getColor, getTransformStream } from '../utils'
 import {
+  doCentralize,
   drawFloor,
+  drawPlaintracePaths,
   drawPlainTracePoints,
+  drawSemanticPath,
+  drawSemanticPoints,
+  getPlainPathWrapper,
+  getPlainPointsWrapper,
   getSvgFromFloor,
   getVisiblePlainPoints,
   getVisiblePlainTraces,
-  drawPlaintracePaths,
-  getPlainPathWrapper,
-  getPlainPointsWrapper,
-  drawSemanticPoints,
 } from './drawing'
-import {
-  getColor,
-  getRawTracePoints,
-  getTransformStream,
-  noop,
-  getPlainPointsLayerName,
-  getPlainTraceLayerName,
-} from '../utils'
+
+const error = (e: Error) => {
+  throw e
+}
+
+const resize$ = xs.create<UIEvent>({
+  start(listener) {
+    window.addEventListener('resize', e => listener.next(e))
+  },
+  stop() {},
+})
 
 export default function makeDrawingDriver() {
   const zoom = d3.zoom() as d3.ZoomBehavior<SVGSVGElement, null>
@@ -40,6 +47,11 @@ export default function makeDrawingDriver() {
     const traceToCentralize$ = drawingSink
       .map(sink => sink.traceToCentralize)
       .compose(dropRepeats())
+      .filter(R.identity)
+    const centralizeMap$ = drawingSink
+      .map(sink => sink.centralizeMap)
+      .compose(dropRepeats())
+      .filter(R.identity)
 
     const floorId$ = floor$.map(flr => flr.floorId)
 
@@ -55,14 +67,14 @@ export default function makeDrawingDriver() {
       next(svg) {
         svg.call(zoom)
       },
+      error,
     })
 
-    let resetTransform = true
     floor$.addListener({
       next(floor) {
-        drawFloor(floor, resetTransform, { zoom })
-        resetTransform = false
+        drawFloor(floor, { zoom })
       },
+      error,
     })
 
     xs.combine(svg$, transform$).addListener({
@@ -70,22 +82,8 @@ export default function makeDrawingDriver() {
         const { x, y, k } = transform
         svg.select('.board').attr('transform', `translate(${x},${y}) scale(${k})`)
       },
+      error,
     })
-
-    // xs.combine(svg$, centralize$.filter(R.identity)).addListener({
-    //   next([svg]) {
-    //     const regionLayer = svg.select('*[data-layer=region]')
-    //     const node = regionLayer.node() as SVGGElement
-    //     const contentBox = node.getBBox()
-    //     const padding = { top: 50, bottom: 50, left: 450, right: 360 }
-    //     const svgNode = svg.node()
-    //     const viewBox = { width: svgNode.clientWidth, height: svgNode.clientHeight }
-    //     const targetTransform = doCentralize(contentBox, viewBox, padding)
-    //     if (targetTransform) {
-    //       zoom.transform(svg.transition(), targetTransform)
-    //     }
-    //   },
-    // })
 
     const visiblePlainTraces$ = getVisiblePlainTraces(plainTraces$, legendState$, floorId$)
     const visiblePlainPoints$ = getVisiblePlainPoints(
@@ -102,6 +100,7 @@ export default function makeDrawingDriver() {
         next([wrapper, traces]) {
           drawPlaintracePaths(wrapper, traces, getColor(traceName))
         },
+        error,
       })
 
       const points$ = visiblePlainPoints$[traceName]
@@ -110,6 +109,7 @@ export default function makeDrawingDriver() {
         next([svg, points]) {
           drawPlainTracePoints(svg, points, getColor(traceName))
         },
+        error,
       })
     }
 
@@ -128,15 +128,78 @@ export default function makeDrawingDriver() {
       start(listener) {
         xs.combine(svg$, visibleSemanticTraces$, sIndex$).addListener({
           next([svg, traces, sIndex]) {
-            const layer = svg.select('*[data-layer=semantic-points]') as SVGSelection
-            drawSemanticPoints(layer, traces, sIndex, (d: { sIndex: number }) =>
+            const pointsLayer = svg.select('*[data-layer=semantic-points]') as SVGSelection
+            drawSemanticPoints(pointsLayer, traces, sIndex, (d: { sIndex: number }) =>
               listener.next(d.sIndex),
             )
           },
+          error,
         })
       },
       stop() {},
     })
+
+    xs.combine(svg$, visibleSemanticTraces$).addListener({
+      next([svg, traces]) {
+        const pathLayer = svg.select('*[data-layer=semantic-path]') as SVGSelection
+        drawSemanticPath(pathLayer, traces)
+      },
+      error,
+    })
+
+    const mapCentralizeInfo$ = xs
+      .merge(
+        floor$.take(1).mapTo(false),
+        resize$.compose(debounce(200)).mapTo(true),
+        centralizeMap$.mapTo(true),
+      )
+      .compose(sampleCombine(svg$))
+      .map(([useTransition, svg]) => {
+        const regionLayer = svg.selectAll('*[data-layer=region]').node() as SVGGElement
+        const contentBox = regionLayer.getBBox()
+        return { useTransition, contentBox }
+      })
+
+    const traceCentralizeInfo$ = traceToCentralize$
+      .compose(sampleCombine(svg$))
+      .map(([trace, svg]) => {
+        const traceNode = svg
+          .select(`*[data-trace-index="${trace.traceIndex}"]`)
+          .node() as SVGGElement
+        const contentBox = traceNode.getBBox()
+        if (contentBox.width === 0) {
+          contentBox.width = 20
+          contentBox.x -= 10
+        }
+        if (contentBox.height === 0) {
+          contentBox.height = 20
+          contentBox.y -= 10
+        }
+        return {
+          useTransition: true,
+          contentBox,
+        }
+      })
+
+    xs
+      .merge(mapCentralizeInfo$, traceCentralizeInfo$)
+      .compose(sampleCombine(svg$))
+      .addListener({
+        next([{ useTransition, contentBox }, svg]) {
+          const svgNode = svg.node() as SVGSVGElement
+          const viewBox = { width: svgNode.clientWidth, height: svgNode.clientHeight }
+          const padding = { top: 50, bottom: 50, left: 450, right: 360 }
+          const targetTransform = doCentralize(contentBox, viewBox, padding)
+          if (targetTransform) {
+            if (useTransition) {
+              zoom.transform(svg.transition(), targetTransform)
+            } else {
+              zoom.transform(svg, targetTransform)
+            }
+          }
+        },
+        error,
+      })
 
     return xs.combine(nextSIndex$).map(([nextSIndex]) => ({
       nextSIndex,

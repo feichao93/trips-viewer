@@ -1,19 +1,13 @@
 import * as d3 from 'd3'
-import xs, { Stream } from 'xstream'
+import xs from 'xstream'
 import { DataSource, RawTrace, RawTracePoint, SemanticTrace, TracePoint } from './interfaces'
 
 export function foldFn<S>(state: S, f: Mutation<S>): S {
   return f(state)
 }
 
-export const noop = () => 0
-
 export interface Mutation<S> {
   (old: S): S
-}
-
-export function redux<S>(initState: S, mutations$: Stream<Mutation<S>>) {
-  return mutations$.fold(foldFn, initState)
 }
 
 export function getTransformStream<A extends Element, B>(zoom: d3.ZoomBehavior<A, B>) {
@@ -82,11 +76,51 @@ export function getTrace([sIndex, { semanticTraces: traces }]: [number, DataSour
   throw new Error(`Invalid sIndex ${sIndex}`)
 }
 
-export function accumulate<A, B>(fn: (acc: B, a: A) => B, array: A[], init: B): B[] {
-  let last = init
-  const result: B[] = [init]
-  for (const v of array) {
-    result.push((last = fn(last, v)))
+export const thunk = {
+  tryToScroll(selector: string) {
+    return () => {
+      const node: any = document.querySelector(selector)
+      if (node) {
+        node.scrollIntoViewIfNeeded()
+      }
+    }
+  },
+  click(selector: string) {
+    return () => {
+      const node: HTMLElement = document.querySelector(selector)
+      node.click()
+    }
+  },
+}
+
+/** Add traceIndex property to Trace and add sIndex to TracePoint. */
+export function preprocessData(dataSource: DataSource) {
+  let startSIndex = 0
+  dataSource.semanticTraces.forEach((trace, i) => {
+    trace.traceIndex = i
+    trace.data.forEach((p, j) => {
+      p.traceIndex = i
+      p.sIndex = startSIndex + j
+    })
+    startSIndex += trace.data.length
+  })
+
+  return dataSource
+}
+
+/** Remove unneccessary points to draw a path */
+export function stripPoints(points: RawTracePoint[], threshhold = 4): RawTracePoint[] {
+  const result: RawTracePoint[] = []
+  for (const p of points) {
+    const last = result[result.length - 1]
+    if (last == null) {
+      result.push(p)
+    } else {
+      const distance = Math.abs(p.x - last.x) + Math.abs(p.y - last.y)
+      if (distance >= threshhold) {
+        result.push(p)
+      }
+    }
   }
   return result
 }

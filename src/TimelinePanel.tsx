@@ -1,11 +1,10 @@
 import * as d3 from 'd3'
-import * as R from 'ramda'
 import sampleCombine from 'xstream/extra/sampleCombine'
 import xs, { Stream } from 'xstream'
 import { DOMSource } from '@cycle/dom'
-import { formatTime, getColor, getSemanticTracePoints, Mutation } from './utils'
+import { formatTime, getColor, getSemanticTracePoints, thunk } from './utils'
 import { ShortcutSource } from './drivers/makeShortcutDriver'
-import { SemanticTrace, TracePoint } from './interfaces'
+import { SemanticTrace, Thunk, TracePoint } from './interfaces'
 import { VNode } from 'snabbdom/vnode'
 import './styles/TimelinePanel.styl'
 
@@ -18,6 +17,7 @@ export interface Sources {
 export interface Sinks {
   nextSIndex: Stream<number>
   DOM: Stream<VNode>
+  thunk: Stream<Thunk>
 }
 
 function TrackPointText({ point: p }: { point: TracePoint }) {
@@ -47,15 +47,15 @@ export default function TimelinePanel(sources: Sources): Sinks {
     .events('click')
     .map(e => Number((e.currentTarget as HTMLElement).dataset.sIndex))
 
-  const navigate$ = xs.merge(
+  const keyboard$ = xs.merge(
     sources.shortcut.shortcut(['s', 'down'], 'next'),
     sources.shortcut.shortcut(['w', 'up'], 'prev'),
   )
 
-  const navigateToNextSIndex$ = navigate$
+  const keyboardToNextSIndex$ = keyboard$
     .compose(sampleCombine(sIndex$, points$))
-    .map(([navigate, sIndex, points]) => {
-      if (navigate === 'next') {
+    .map(([short, sIndex, points]) => {
+      if (short === 'next') {
         return Math.min(sIndex + 1, points.length - 1)
       } else {
         return Math.max(sIndex - 1, 0)
@@ -93,17 +93,17 @@ export default function TimelinePanel(sources: Sources): Sinks {
       </div>
       <div className="content">
         <div className="list">
-          {points.map((p, i) => (
+          {points.map(p => (
             <div
               className="item"
-              data-sIndex={String(i)}
+              data-sIndex={String(p.sIndex)}
               style={{
                 marginTop: gap + 'px',
                 height: `${h(p.endTime - p.startTime)}px`,
                 cursor: 'pointer',
               }}
             >
-              {i === sIndex ? (
+              {p.sIndex === sIndex ? (
                 <svg width="20" height="40" style={{ display: 'block', position: 'absolute' }}>
                   <path fill="#ff5447" d="M0,10 L20,20 L0,30 Z" />
                 </svg>
@@ -128,6 +128,7 @@ export default function TimelinePanel(sources: Sources): Sinks {
 
   return {
     DOM: vdom$,
-    nextSIndex: xs.merge(clickToNextSIndex$, navigateToNextSIndex$),
+    nextSIndex: xs.merge(clickToNextSIndex$, keyboardToNextSIndex$),
+    thunk: sIndex$.map(sIndex => `.item[data-s-index='${sIndex}']`).map(thunk.tryToScroll),
   }
 }

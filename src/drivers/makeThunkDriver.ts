@@ -7,6 +7,9 @@ export default function makeThunkDriver() {
       next(thunk) {
         thunk()
       },
+      error(e) {
+        throw e
+      },
     })
   }
 }

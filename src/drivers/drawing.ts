@@ -1,26 +1,25 @@
 import * as d3 from 'd3'
 import * as R from 'ramda'
-import dropRepeats from 'xstream/extra/dropRepeats'
-import sampleCombine from 'xstream/extra/sampleCombine'
 import xs, { Stream } from 'xstream'
+import dropRepeats from 'xstream/extra/dropRepeats'
+import { MAX_SCALE, MIN_SCALE, plainTraceNameList } from '../constants'
+import { State as LegendState } from '../Legend'
 import {
   Floor,
   RawTrace,
   RawTracePoint,
-  TimeRange,
-  TracePoint,
   SemanticTrace,
   SVGSelection,
+  TimeRange,
+  TracePoint,
 } from '../interfaces'
 import {
   getColor,
-  getRawTracePoints,
-  getPlainTraceLayerName,
   getPlainPointsLayerName,
-  accumulate,
+  getPlainTraceLayerName,
+  getRawTracePoints,
+  stripPoints,
 } from '../utils'
-import { MAX_SCALE, MIN_SCALE, plainTraceNameList } from '../constants'
-import { State as LegendState } from '../Legend'
 
 export interface Env {
   zoom: d3.ZoomBehavior<SVGSVGElement, null>
@@ -30,7 +29,7 @@ export function getSvgFromFloor(floor: Floor) {
   return d3.select('svg.map') as d3.Selection<SVGSVGElement, null, null, null>
 }
 
-export function drawFloor(floor: Floor, resetTransform: boolean, env: Env) {
+export function drawFloor(floor: Floor, env: Env) {
   const svg = getSvgFromFloor(floor)
   const regionLayer = svg.select('*[data-layer=region]')
   const regionJoin = regionLayer.selectAll('polygon').data(floor.regions)
@@ -76,18 +75,6 @@ export function drawFloor(floor: Floor, resetTransform: boolean, env: Env) {
       text: node.name,
       config: node.labelConfig,
     }))
-  }
-
-  if (resetTransform) {
-    const node = regionLayer.node() as SVGGElement
-    const contentBox = node.getBBox()
-    const padding = { top: 50, bottom: 50, left: 450, right: 360 }
-    const svgNode = svg.node()
-    const viewBox = { width: svgNode.clientWidth, height: svgNode.clientHeight }
-    const targetTransform = doCentralize(contentBox, viewBox, padding)
-    if (targetTransform) {
-      env.zoom.transform(svg, targetTransform)
-    }
   }
 }
 
@@ -212,15 +199,14 @@ export function drawSemanticPoints(
   sIndex: number,
   onClick: (d: { sIndex: number }) => void,
 ) {
-  const startIndexes = accumulate((acc, tr) => acc + tr.data.length, traces, 0)
   const pointGroupsJoin = layer
     .selectAll('.track-points')
-    .data(traces.map((trace, traceIndex) => ({ trace, traceIndex })))
+    .data(traces, (tr: SemanticTrace) => String(tr.traceIndex))
   const pointGroups = pointGroupsJoin
     .enter()
     .append('g')
     .classed('track-points', true)
-    .attr('data-trace-index', (d, i) => String(i))
+    .attr('data-trace-index', d => d.traceIndex)
     .merge(pointGroupsJoin)
   pointGroupsJoin.exit().remove()
 
@@ -228,9 +214,7 @@ export function drawSemanticPoints(
 
   const symbolsJoin = pointGroups
     .selectAll('.symbol')
-    .data(({ trace, traceIndex }) =>
-      trace.data.map((p, i) => ({ sIndex: startIndexes[traceIndex] + i, p })),
-    )
+    .data(d => d.data, (p: TracePoint) => String(p.traceIndex))
   symbolsJoin
     .enter()
     .append('rect')
@@ -239,8 +223,8 @@ export function drawSemanticPoints(
     .attr('fill', getColor('semantic'))
     .on('click', onClick)
     .style('cursor', 'pointer')
-    .attr('x', ({ p }) => p.x - pointRadius('stay'))
-    .attr('y', ({ p }) => p.y - pointRadius('stay'))
+    .attr('x', p => p.x - pointRadius('stay'))
+    .attr('y', p => p.y - pointRadius('stay'))
     .attr('width', 2 * pointRadius('stay'))
     .attr('height', 2 * pointRadius('stay'))
     .merge(symbolsJoin)
@@ -248,8 +232,26 @@ export function drawSemanticPoints(
   symbolsJoin.exit().remove()
 }
 
+export function drawSemanticPath(layer: SVGSelection, traces: SemanticTrace[]) {
+  const pathJoin = layer
+    .selectAll('path')
+    .data(traces, (tr: SemanticTrace) => String(tr.traceIndex))
+
+  pathJoin
+    .enter()
+    .append('path')
+    .attr('fill', 'none')
+    .attr('data-trace-index', tr => tr.traceIndex)
+    .attr('stroke', getColor('semantic'))
+    .attr('stroke-width', 0.4)
+    .attr('d', trace => lineGenerator(trace.data))
+    .attr('opacity', 1)
+    .attr('stroke-dasharray', '1 1')
+  pathJoin.exit().remove()
+}
+
 const lineGenerator = d3
-  .line<RawTracePoint>()
+  .line<RawTracePoint | TracePoint>()
   .x(item => item.x)
   .y(item => item.y)
   .curve(d3.curveCardinal.tension(0.7))
@@ -266,7 +268,7 @@ export function drawPlaintracePaths(
     .attr('fill', 'none')
     .attr('stroke', color)
     .attr('stroke-width', 0.3)
-    .attr('d', trace => lineGenerator(trace.data))
+    .attr('d', trace => lineGenerator(stripPoints(trace.data)))
     .attr('opacity', 0.8)
   join.exit().remove()
 }

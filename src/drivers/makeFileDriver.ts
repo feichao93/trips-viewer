@@ -1,9 +1,10 @@
 import xs, { Stream } from 'xstream'
-import { Driver } from '@cycle/run'
+import { DataSource } from '../interfaces'
+import { preprocessData } from '../utils'
 
-export default function makeFileDriver<T>(): Driver<Stream<File>, Stream<T>> {
+export default function makeFileDriver() {
   return function fileDriver(file$: Stream<File>) {
-    return xs.create({
+    return xs.create<{ filename: string; data: DataSource }>({
       start(listener) {
         file$.addListener({
           next(file) {
@@ -12,7 +13,10 @@ export default function makeFileDriver<T>(): Driver<Stream<File>, Stream<T>> {
             reader.addEventListener('loadend', () => {
               try {
                 const content: string = reader.result
-                listener.next(JSON.parse(content) as T)
+                listener.next({
+                  filename: file.name,
+                  data: preprocessData(JSON.parse(content)),
+                })
               } catch (e) {
                 listener.error(e)
               }

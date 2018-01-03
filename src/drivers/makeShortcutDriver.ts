@@ -1,4 +1,5 @@
 import xs, { Stream } from 'xstream'
+
 const MouseTrap = require('mousetrap')
 
 export class ShortcutSource {
