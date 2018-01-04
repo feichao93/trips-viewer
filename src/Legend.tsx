@@ -101,7 +101,7 @@ export default function Legend(sources: Sources): Sinks {
     .map(e => (e.currentTarget as HTMLElement).dataset.toggleKey)
     .map(key => R.evolve({ [key]: R.not }))
 
-  const vdom$ = state$.debug('state').map(state => (
+  const vdom$ = state$.map(state => (
     <div className="legend">
       <div className="title">Legend</div>
       <div className="list">

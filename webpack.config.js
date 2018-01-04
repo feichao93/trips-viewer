@@ -14,8 +14,8 @@ module.exports = env => {
     entry: ['./src/main.tsx'],
 
     output: {
-      filename: '[name].js',
-      path: path.join(__dirname, './build/'),
+      path: path.join(__dirname, './docs/'),
+      filename: isProduction ? 'viewer.[chunkhash:6].js' : 'bundle.js',
     },
 
     resolve: {

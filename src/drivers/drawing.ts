@@ -288,7 +288,7 @@ export function drawTooltip([show, target, transform]: [boolean, TracePoint, d3.
         <br />
         ${preposition}
         ${formatTime(target.startTime * 1000)}
-        ${target.endTime > target.startTime ? `-- ${formatTime(target.endTime)}` : ''}
+        ${target.endTime > target.startTime ? `-- ${formatTime(target.endTime * 1000)}` : ''}
       </div>
     `)
   } else {
