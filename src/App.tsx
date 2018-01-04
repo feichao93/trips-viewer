@@ -49,6 +49,7 @@ export interface Sinks {
 
 const svgMarkup = (
   <div>
+    <div className="tooltip-wrapper" />
     <svg className="map">
       <g className="board">
         <g data-layer="region" />

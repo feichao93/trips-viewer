@@ -19,6 +19,7 @@ import {
   getPlainTraceLayerName,
   getRawTracePoints,
   stripPoints,
+  formatTime,
 } from '../utils'
 
 export interface Env {
@@ -271,6 +272,28 @@ export function drawPlaintracePaths(
     .attr('d', trace => lineGenerator(stripPoints(trace.data)))
     .attr('opacity', 0.8)
   join.exit().remove()
+}
+
+export function drawTooltip([show, target, transform]: [boolean, TracePoint, d3.ZoomTransform]) {
+  const tooltipWrapper = d3.select('.tooltip-wrapper') as SVGSelection
+  tooltipWrapper.style('left', `${transform.x}px`).style('top', `${transform.y}px`)
+  if (show && target) {
+    const x = transform.applyX(target.x) - transform.x
+    const y = transform.applyY(target.y) - transform.y
+    const verb = target.event === 'stay' ? 'stay around' : 'pass through'
+    const preposition = target.startTime === target.endTime ? 'at' : 'during'
+    tooltipWrapper.style('display', 'block').html(`
+      <div style="left: ${x}px; top: ${y}px;">
+        ${verb} <i>${target.regionName}</i>
+        <br />
+        ${preposition}
+        ${formatTime(target.startTime * 1000)}
+        ${target.endTime > target.startTime ? `-- ${formatTime(target.endTime)}` : ''}
+      </div>
+    `)
+  } else {
+    tooltipWrapper.style('display', 'none')
+  }
 }
 
 export function getPlainPathWrapper(svg: SVGSelection, traceName: string) {

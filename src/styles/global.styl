@@ -9,3 +9,18 @@ body {
 body, button, input, optgroup, select, textarea {
   font-family 'microsoft yahei'
 }
+
+.tooltip-wrapper {
+  position absolute
+  z-index 1
+  pointer-events none
+  > div {
+    position absolute
+    min-width 250px
+    background rgba(0, 0, 0, 0.6)
+    color white
+    padding 8px
+    transform translate(8px, 8px)
+    font-size 16px
+  }
+}

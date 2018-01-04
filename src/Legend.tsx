@@ -20,6 +20,7 @@ export interface State {
   raw: boolean
   cleanedRaw: boolean
   semantic: boolean
+  tooltip: boolean
 }
 
 interface CheckBoxProps {
@@ -100,7 +101,7 @@ export default function Legend(sources: Sources): Sinks {
     .map(e => (e.currentTarget as HTMLElement).dataset.toggleKey)
     .map(key => R.evolve({ [key]: R.not }))
 
-  const vdom$ = state$.map(state => (
+  const vdom$ = state$.debug('state').map(state => (
     <div className="legend">
       <div className="title">Legend</div>
       <div className="list">
@@ -128,6 +129,13 @@ export default function Legend(sources: Sources): Sinks {
           checked={state.semantic}
           shape="rect"
           toggleKey="semantic"
+        />
+        <LegendItem
+          displayName="Tooltip"
+          color="rgba(0,0,0,0.6)"
+          shape="rect"
+          checked={state.tooltip}
+          toggleKey="tooltip"
         />
         <LegendItem
           displayName="Room"

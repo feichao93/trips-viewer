@@ -65,6 +65,7 @@ export default function Sidebar(sources: Sources): Sinks {
     raw: true,
     cleanedRaw: true,
     semantic: true,
+    tooltip: true,
   }
 
   const changeLegendState$ = xs.create<Mutation<LegendState>>()

@@ -6,8 +6,8 @@ import dropRepeats from 'xstream/extra/dropRepeats'
 import sampleCombine from 'xstream/extra/sampleCombine'
 import { DrawingSink, DrawingSource } from '../App'
 import { MAX_SCALE, MIN_SCALE, plainTraceNameList } from '../constants'
-import { SVGSelection } from '../interfaces'
-import { getColor, getTransformStream } from '../utils'
+import { SVGSelection, TracePoint } from '../interfaces'
+import { getColor, getTransformStream, formatTime } from '../utils'
 import {
   doCentralize,
   drawFloor,
@@ -20,6 +20,7 @@ import {
   getSvgFromFloor,
   getVisiblePlainPoints,
   getVisiblePlainTraces,
+  drawTooltip,
 } from './drawing'
 
 const error = (e: Error) => {
@@ -144,6 +145,21 @@ export default function makeDrawingDriver() {
         const pathLayer = svg.select('*[data-layer=semantic-path]') as SVGSelection
         drawSemanticPath(pathLayer, traces)
       },
+      error,
+    })
+
+    const tooltipTarget$ = xs
+      .combine(sIndex$, dataSource$, floorId$)
+      .map(([sIndex, dataSource, floorId]) => {
+        const points = R.flatten<TracePoint>(
+          dataSource.semanticTraces.filter(tr => tr.floor === floorId).map(tr => tr.data),
+        )
+        return points.find(p => p.sIndex === sIndex)
+      })
+      .compose(dropRepeats())
+
+    xs.combine(legendState$.map(s => s.tooltip), tooltipTarget$, transform$).addListener({
+      next: drawTooltip,
       error,
     })
 
