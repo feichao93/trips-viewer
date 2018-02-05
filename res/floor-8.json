@@ -4937,10 +4937,10 @@
   "version": "0.5",
   "config": {
     "colors": {
-      "door": "#a2a1a1",
-      "staircase": "#d1ed83",
+      "door": "#666666",
+      "staircase": "#999999",
       "hallway": "#ffffff",
-      "room": "#f4f4f4"
+      "room": "#999999"
     }
   },
   "createDate": "2017-05-25T17:55:16.506Z"

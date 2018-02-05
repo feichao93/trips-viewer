@@ -40,7 +40,7 @@ export function drawFloor(floor: Floor, env: Env) {
     .merge(regionJoin)
     .attr('fill', d => floor.config.colors[d.color])
     .attr('points', d => d.points.map(p => `${p.x},${p.y}`).join(' '))
-    .attr('stroke', '#cccccc')
+    .attr('stroke', '#999999')
     .attr('stroke-width', 0.2)
   regionJoin.exit().remove()
 
@@ -50,7 +50,7 @@ export function drawFloor(floor: Floor, env: Env) {
     .enter()
     .append('line')
     .merge(doorJoin)
-    .attr('stroke', '#a2a1a1')
+    .attr('stroke', '#666666')
     .attr('x1', d => d.line.x1)
     .attr('y1', d => d.line.y1)
     .attr('x2', d => d.line.x2)
