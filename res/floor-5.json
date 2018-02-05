@@ -4938,9 +4938,9 @@
   "config": {
     "colors": {
       "door": "#666666",
-      "staircase": "#999999",
+      "staircase": "#d4eb8b",
       "hallway": "#ffffff",
-      "room": "#999999"
+      "room": "#cccccc"
     }
   },
   "createDate": "2017-05-25T17:55:16.506Z"
