@@ -1,4 +1,5 @@
 import { Floor } from '../src/interfaces'
+import { preprocessFloors } from './rules'
 
 declare global {
   interface NodeRequire {
@@ -11,5 +12,7 @@ const floors: Floor[] = []
 requireFloor.keys().forEach((key: string) => {
   floors.push(requireFloor(key))
 })
+
+preprocessFloors(floors)
 
 export default floors

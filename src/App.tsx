@@ -67,7 +67,7 @@ const svgMarkup = (
 
 function calcualteFloorStats(dataSource: DataSource): FloorStats {
   const stats: FloorStats = []
-  for (const floorId of Array.from('0123456789').map(Number)) {
+  for (const floorId of Array.from('01234').map(Number)) {
     stats.push({ count: 0, floorId, floorName: `floor-${floorId}` })
   }
   dataSource.rawTraces.forEach(rawTrace => {
@@ -84,7 +84,7 @@ export default function App(sources: Sources): Sinks {
   const dataSource$ = sources.file.map(f => f.data).startWith(initDataSource)
   const floorStats$ = dataSource$.map(calcualteFloorStats)
 
-  const initFloorId = initDataSource.semanticTraces[0].floor
+  const initFloorId = 0
   const changeFloorIdProxy$ = xs.create<Mutation<number>>()
   const floorId$: Stream<number> = changeFloorIdProxy$.fold((floorId, f) => f(floorId), initFloorId)
   const sidebar = Sidebar({

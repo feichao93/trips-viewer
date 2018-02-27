@@ -7,6 +7,7 @@ import { ShortcutSource } from './drivers/makeShortcutDriver'
 import { SemanticTrace, Thunk, TracePoint } from './interfaces'
 import { VNode } from 'snabbdom/vnode'
 import './styles/TimelinePanel.styl'
+import { getNameFromId } from '../res/rules'
 
 export interface Sources {
   DOM: DOMSource
@@ -14,6 +15,7 @@ export interface Sources {
   semanticTraces: Stream<SemanticTrace[]>
   shortcut: ShortcutSource
 }
+
 export interface Sinks {
   nextSIndex: Stream<number>
   DOM: Stream<VNode>
@@ -23,7 +25,7 @@ export interface Sinks {
 function TrackPointText({ point: p }: { point: TracePoint }) {
   return (
     <p>
-      <b>{p.regionName}</b>
+      <b>{`${Math.floor(p.roomID / 141) + 1}F ${getNameFromId(p.roomID)}`}</b>
       <br />
       {formatTime(p.startTime * 1000)}
       {p.endTime > p.startTime ? `-- ${formatTime(p.endTime * 1000)}` : ''}

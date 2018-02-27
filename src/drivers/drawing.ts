@@ -21,6 +21,7 @@ import {
   stripPoints,
   formatTime,
 } from '../utils'
+import { notShowIdArray } from '../../res/rules'
 
 export interface Env {
   zoom: d3.ZoomBehavior<SVGSVGElement, null>
@@ -60,19 +61,21 @@ export function drawFloor(floor: Floor, env: Env) {
 
   const textLayer = svg.select('*[data-layer=text]')
   const textJoin = textLayer.selectAll('text').data(getAllLabelConfig)
+  const fontSize = 1.5
   textJoin
     .enter()
     .append('text')
     .merge(textJoin)
     .text(d => d.text)
     .attr('x', d => d.config.pos.x)
-    .attr('y', d => d.config.pos.y + 1)
-    .attr('font-size', 1.2)
-    .attr('fill', '#666')
+    .attr('y', d => d.config.pos.y + fontSize)
+    .attr('font-size', fontSize)
+    .attr('fill', d => (notShowIdArray.includes(d.nodeId % 141) ? 'none' : '#666'))
   textJoin.exit().remove()
 
   function getAllLabelConfig() {
     return floor.nodes.filter(node => node.labelConfig && node.labelConfig.show).map(node => ({
+      nodeId: node.id,
       text: node.name,
       config: node.labelConfig,
     }))
@@ -85,6 +88,7 @@ export interface Padding {
   top: number
   bottom: number
 }
+
 export function doCentralize(contentBox: SVGRect, viewport: Partial<SVGRect>, padding: Padding) {
   if (contentBox.width === 0) {
     contentBox.width = 200
@@ -132,6 +136,7 @@ export function getVisiblePlainPoints(
         function inTimeRange(p: RawTracePoint) {
           return timeRange.start <= p.time && p.time <= timeRange.end
         }
+
         if ((visibility as any)[traceName]) {
           const tracesInThisFloor = traces.filter(tr => tr.floor === String(floorId))
           return getRawTracePoints(tracesInThisFloor).filter(inTimeRange)
@@ -256,6 +261,7 @@ const lineGenerator = d3
   .x(item => item.x)
   .y(item => item.y)
   .curve(d3.curveCardinal.tension(0.7))
+
 export function drawPlaintracePaths(
   wrapper: d3.Selection<SVGElement, null, null, null>,
   traces: RawTrace[],

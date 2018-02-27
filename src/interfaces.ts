@@ -68,6 +68,7 @@ export interface TracePoint {
   startTime: number
   endTime: number
   event: string
+  roomID: number
 }
 
 export interface RawTracePoint {
