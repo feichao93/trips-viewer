@@ -25,7 +25,7 @@ export interface Sinks {
 function TrackPointText({ point: p }: { point: TracePoint }) {
   return (
     <p>
-      <b>{`${Math.floor(p.roomID / 141) + 1}F ${getNameFromId(p.roomID)}`}</b>
+      <b>{`${Math.floor(p.roomID / 141)}F ${getNameFromId(p.roomID)}`}</b>
       <br />
       {formatTime(p.startTime * 1000)}
       {p.endTime > p.startTime ? `-- ${formatTime(p.endTime * 1000)}` : ''}

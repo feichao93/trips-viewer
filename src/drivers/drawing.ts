@@ -21,7 +21,7 @@ import {
   stripPoints,
   formatTime,
 } from '../utils'
-import { notShowIdArray } from '../../res/rules'
+import { getNameFromId, notShowIdArray } from '../../res/rules'
 
 export interface Env {
   zoom: d3.ZoomBehavior<SVGSVGElement, null>
@@ -144,7 +144,7 @@ export function getVisiblePlainPoints(
           return []
         }
       })
-      .compose(dropRepeats(R.equals))
+      .compose(dropRepeats(R.equals)) as any
   }
   return result$
 }
@@ -288,9 +288,10 @@ export function drawTooltip([show, target, transform]: [boolean, TracePoint, d3.
     const y = transform.applyY(target.y) - transform.y
     const verb = target.event === 'stay' ? 'stay around' : 'pass through'
     const preposition = target.startTime === target.endTime ? 'at' : 'during'
+    const location = `${Math.floor(target.roomID / 141)}F ${getNameFromId(target.roomID)}`
     tooltipWrapper.style('display', 'block').html(`
       <div style="left: ${x}px; top: ${y}px;">
-        ${verb} <i>${target.regionName}</i>
+        ${verb} <i>${location}</i>
         <br />
         ${preposition}
         ${formatTime(target.startTime * 1000)}

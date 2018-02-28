@@ -7,7 +7,7 @@ type RuleFn = (x: number, y: number) => string
 type Rules = ([number, RuleFn] | [number, number, RuleFn] | [number, number, number, RuleFn])[]
 
 const rules: Rules = [
-  [0, (x, y) => `warehouse-${y}1`],
+  [0, (x, y) => `warehouse-${y}01`],
   [1, 5, (x, y) => `W-${y}${t(x)}`], // W-1 ~ W-5
   [6, 10, (x, y) => `N-${y}${t(x - 5)}`], // N-1 ~ N-5
   [11, 18, (x, y) => `shop-${y}${t(x - 10)}`], // shop-1 ~ shop-8

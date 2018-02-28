@@ -54,7 +54,7 @@ export default function Sidebar(sources: Sources): Sinks {
   const floorStats$ = sources.floorStats
   const floorId$ = sources.floorId
 
-  const filename$ = sources.nextFilename$.startWith('idle')
+  const filename$ = sources.nextFilename$.startWith('test-device')
 
   const buttonGroup = (isolate(ButtonGroup) as typeof ButtonGroup)({
     DOM: domSource,

@@ -204,7 +204,7 @@ export default function makeDrawingDriver() {
         next([{ useTransition, contentBox }, svg]) {
           const svgNode = svg.node() as SVGSVGElement
           const viewBox = { width: svgNode.clientWidth, height: svgNode.clientHeight }
-          const padding = { top: 50, bottom: 50, left: 450, right: 360 }
+          const padding = { top: 50, bottom: 50, left: 360, right: 400 }
           const targetTransform = doCentralize(contentBox, viewBox, padding)
           if (targetTransform) {
             if (useTransition) {
