@@ -62,8 +62,8 @@ export default function Sidebar(sources: Sources): Sinks {
   })
   const initLegendState: LegendState = {
     groundTruth: true,
-    raw: true,
-    cleanedRaw: true,
+    raw: false,
+    cleanedRaw: false,
     semantic: true,
     tooltip: true,
   }

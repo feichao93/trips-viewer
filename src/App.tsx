@@ -84,7 +84,7 @@ export default function App(sources: Sources): Sinks {
   const dataSource$ = sources.file.map(f => f.data).startWith(initDataSource)
   const floorStats$ = dataSource$.map(calcualteFloorStats)
 
-  const initFloorId = 0
+  const initFloorId = 1
   const changeFloorIdProxy$ = xs.create<Mutation<number>>()
   const floorId$: Stream<number> = changeFloorIdProxy$.fold((floorId, f) => f(floorId), initFloorId)
   const sidebar = Sidebar({
