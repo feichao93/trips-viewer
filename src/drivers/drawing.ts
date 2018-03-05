@@ -286,7 +286,7 @@ export function drawTooltip([show, target, transform]: [boolean, TracePoint, d3.
   if (show && target) {
     const x = transform.applyX(target.x) - transform.x
     const y = transform.applyY(target.y) - transform.y
-    const verb = target.event === 'stay' ? 'stay around' : 'pass through'
+    const verb = target.event === 'stay' ? 'stay in' : 'pass by'
     const preposition = target.startTime === target.endTime ? 'at' : 'during'
     const location = `${Math.floor(target.roomID / 141)}F ${getNameFromId(target.roomID)}`
     tooltipWrapper.style('display', 'block').html(`
